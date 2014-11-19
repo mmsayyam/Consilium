@@ -1,0 +1,19 @@
+.navbar {
+	font-size: 20px;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	border: none;
+	background-color: #414141;
+	box-shadow: 0px 2px 5px #000000;
+	z-index: 99999;
+	height: 70px;
+}
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+	color: #FFFFFF;
+	height: 70px;
+	padding-top: 23px;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: #353535;
+	vertical-align: middle;
+}
