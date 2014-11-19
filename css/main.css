@@ -51,7 +51,7 @@
 	border-bottom: 1px solid #ddd;
 }
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: 'OpenSans', sans-serif;
 
 }
 .editor {
@@ -67,4 +67,8 @@ a:hover {
 }
 .heading {
 	margin-bottom: 3em;
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url(../fonts/OpenSans-CondLight.ttf);
 }
