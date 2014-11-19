@@ -2,7 +2,7 @@ footer {
 	
 	padding: 3em 0;
 	padding-bottom: 0px;
-	color: #676767;
+	color: #808080;
 	text-align: center;
 	background-color: #414141;
 	background-image: url('img/bg.png');
@@ -42,7 +42,6 @@ footer {
 	transition-duration: 0.4s;
 }
 .col-centered {
-	
 	margin: 0 auto;
 }
 .join-us-fb, .join-us-tt, .join-us-tm {
@@ -73,7 +72,7 @@ footer {
 .social-links {
 	width: 50%;
 	margin-left: 25%;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #808080;
 }
 .social-row {
 	padding-bottom: 1.3em;
@@ -81,13 +80,13 @@ footer {
 .footer-cont.row {
 	padding-bottom: 1em;
 	margin: 0px;
+	font-size: 1.3em;
 }
 .footer-buttons {
 	background-color: #2A2A2A;
 }
 .footer-p {
 	text-align: center;
-	font-family: 'Raleway', sans-serif;
 	color: #ddd;
 }
 .btn-footer {
@@ -101,11 +100,9 @@ footer {
 }
 .footer-date {
 	margin-top: 2em;
-	font-family: 'Raleway', sans-serif;
 }
 .footer-thephone {
 	margin-top: 2em;
-	font-family: 'Raleway', sans-serif;
 	display: inline;
 }
 .footer-links li {
@@ -131,11 +128,19 @@ footer .table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .
 footer .social-table tr th {
 	padding-left: 7px;
 }
+.social-table {
+	margin-left: -8px;
+}
 footer th {
-	color: #646464;
+	color: #808080;
 	font-size: 20px;
+	font-weight: normal;
 }
 footer > td {
 	padding-top: 0px;
 	padding-bottom: 0px;
+}
+.center-something {
+	padding-left: 4em;
+	padding-right: 8.2em;
 }

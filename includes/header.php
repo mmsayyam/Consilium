@@ -7,14 +7,14 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php">Consultancy</a>
+			<a class="navbar-brand" href="index.php"><img style="width: auto; height: 70px;" src="img/Consilium.svg"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsable-nav">
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav navbar-right">
 				<li><a href="">What we do</a></li>
 				<li><a href="">Who will benefit</a></li>
 				<li><a href="">Our offerings</a></li>
-				<li><a href="features-videos.php">Features & Videos</a></li>
+				<li><a href="">Features & Videos</a></li>
 				<li><a href="">About us</a></li>
 				<li><a href="">Contact us</a></li>
 			</ul>
@@ -26,7 +26,7 @@
 
 				<?php } else { ?>
 
-				<li class="dropdown"><a href="member-login.php">Members</a></li>
+				<!-- <li class="dropdown"><a href="member-login.php">Members</a></li> -->
 
 				<?php } ?>
 			</ul>

@@ -1,23 +1,23 @@
 .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-    background: url(../slider/img/b21.png) no-repeat;
+    background: url(../img/Slider_Circles.svg) no-repeat;
     overflow: hidden;
     cursor: pointer;
 }
 
 .jssorb21 div {
-    background-position: -5px -5px;
+    background-position: -30px 0px;
 }
 
 .jssorb21 div:hover, .jssorb21 .av:hover {
-    background-position: -35px -5px;
+    background-position: -60px 0px;
 }
 
 .jssorb21 .av {
-    background-position: -65px -5px;
+    background-position: 0px 0px;
 }
 
 .jssorb21 .dn, .jssorb21 .dn:hover {
-    background-position: -95px -5px;
+    background-position: -90px 0px;
 }
 /*.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
     position: absolute;
@@ -118,13 +118,19 @@
     text-align: left;
     line-height: 60px;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 60px;
     color: #FFFFFF;
     background-color: rgba(0,0,0,0.5);
 }
 .slider-title {
-    margin-top:30px;
-    margin-left: 30px;
+    margin-top: 100px;
+}
+.slider-title-line1 {
+    margin-top:150px;
+    padding-left: 25%;
+}
+.slider-title-line2 {
+    padding-left: 45%;
 }
 .stupid_message_2 {
     position: absolute;
@@ -132,6 +138,7 @@
     height: 120px;
     top: 470px;
     padding: 5px;
+    padding-left: 0px;
     text-align: left;
     line-height: 36px;
     font-size: 30px;
@@ -144,19 +151,19 @@
 }
 .slide_nav_inner {
     position: absolute;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
     text-align:center;
-    line-height:19px;
+    line-height:21px;
     color:#FFFFFF;
     font-size:12px;
 }
 .slide_nav_innerav {
     position: absolute;
-    width: 19px;
-    height: 19px;
+    width: 21px;
+    height: 21px;
     text-align:center;
-    line-height:19px;
+    line-height:21px;
     color:#FFFFFF;
     font-size:12px;
 }
@@ -181,7 +188,6 @@
 }
 .slide-more-link {
     position: absolute;
-    text-align:center;
     line-height:19px;
     top: 480px;
     width: 100%;

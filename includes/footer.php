@@ -47,13 +47,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img class="fb connect" src="img/icons/facebook.png"><span class="join-us-fb">Like Us!</span>
+                                    <img class="fb connect" src="img/facebook.svg">
                                 </td>
                                 <td>
-                                    <img class="tt connect" src="img/icons/twitter.png"><span class="join-us-tt">Follow Us!</span>
+                                    <img class="tt connect" src="img/twitter.svg">
                                 </td>
                                 <td>
-                                    <img class="tm connect" src="img/icons/tumblr.png"><span class="join-us-tm">Follow Us!</span>
+                                    <img class="tm connect" src="img/google.svg">
+                                </td>
+                                <td>
+                                    <img class="tm connect" src="img/email.svg">
                                 </td>
                             </tr>
                         </table>
@@ -94,9 +97,9 @@
         -->
         <div class="footer-cont row">
             <!-- <div class="footer-thephone"><small>© #Devs October, 2014 <span class="em"></span>| <span class="em"></span><span class="glyphicon glyphicon-earphone"><span class="footer-phone"> 0336-5119794 <span class="em"></span>| <span class="em"></span>Designed By: Nauroz Ahmad</span></span></small></div> -->
-            <div class="footer-thephone col-xs-4 col-sm-4 col-md-4"><small>© Consultancy November, 2014</small></div>
-            <div class="footer-thephone col-xs-4 col-sm-4 col-md-4"><small><span class="glyphicon glyphicon-earphone"></span> Something Something</small></div>
-            <div class="footer-thephone col-xs-4 col-sm-4 col-md-4"><small>Something Something</small></div>
+            <div class="footer-thephone">© 2014 Consilium Corporation</div>
+            <div class="footer-thephone center-something"><a href="">Terms and Conditions</a></div>
+            <div class="footer-thephone"><a href="">Privacy Policy</a></div>
         </div>
     </div>
 </footer>

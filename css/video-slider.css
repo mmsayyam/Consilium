@@ -2,33 +2,54 @@
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url(../slider/img/a13.png) no-repeat;
+    background: url(../img/Arrow_Right_Filled.svg) no-repeat;
+    background-size: 70px 70px;
     overflow: hidden;
+    width: 70px;
+    height: 70px;
 }
 
 .jssora13l {
-    background-position: -10px -35px;
+    background-position: 0px -0px;
+    width: 70px;
+    height: 70px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
 .jssora13r {
-    background-position: -70px -35px;
-}
-
-.jssora13l:hover {
-    background-position: -130px -35px;
-}
-
-.jssora13r:hover {
-    background-position: -190px -35px;
+    background-position: 0px 0px;
+    width: 70px;
+    height: 70px;
 }
 
 .jssora13ldn {
     background-position: -250px -35px;
+    background: url(../img/Arrow_Right_Filled.svg) no-repeat;
+    background-size: 70px 70px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
 }
 
 .jssora13rdn {
     background-position: -310px -35px;
+    background: url(../img/Arrow_Right_Filled.svg) no-repeat;
+    background-size: 70px 70px;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
 }
 #video-slider {
     margin-bottom: 3em;
+}
+.heading a:hover {
+    color: #000000;
+}
+.video-slides img{
+    display: table;
+    margin: 0 auto;
+    margin-top: 95px;
 }
