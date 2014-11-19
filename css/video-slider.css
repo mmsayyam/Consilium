@@ -48,11 +48,29 @@
 .heading a:hover {
     color: #000000;
 }
-.video-slides img{
+.video-slides .video-overlay img{
     display: table;
     margin: 0 auto;
     margin-top: 95px;
 }
 .video-slides div{
     border: 1px solid #ddd;
+}
+.video-slides .video-overlay {
+    border: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.video-slides .video-overlay:hover {
+    background-color: rgba(0,0,0,0.2);
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
