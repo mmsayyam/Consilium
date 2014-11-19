@@ -122,7 +122,7 @@
     background-color: rgba(0,0,0,0.5);
 }
 .slider-title {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .slider-title-line1 {
     margin-top:150px;
@@ -130,6 +130,16 @@
 }
 .slider-title-line2 {
     padding-left: 45%;
+}
+.slider-title-line3 {
+    margin-top:150px;
+    padding-left: 35%;
+}
+.slider-title-line4 {
+    padding-left: 45%;
+}
+.slider-title-line5 {
+    padding-left: 60%;
 }
 .stupid_message_2 {
     position: absolute;
