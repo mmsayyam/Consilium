@@ -21,7 +21,7 @@
 			$_SESSION['username'] = $_POST['username'];
 			$_SESSION['access'] = $record['access'];
 			if ($record['access'] == 'admin') {
-				header("Location: admin-panel.php");
+				header("Location: admin/admin-panel.php");
 			}
 			elseif ($record['access'] == 'user') {
 				header("Location: user-panel.php");

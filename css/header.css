@@ -8,6 +8,10 @@
 	z-index: 99999;
 	height: 80px;
 }
+.navbar-inverse .navbar-collapse {
+	border-top: 1px solid #414141;
+	background-color: #414141;
+}
 .navbar-inverse .navbar-nav > li > a{
 	color: #FFFFFF;
 	height: 80px;
@@ -15,6 +19,9 @@
 }
 .navbar-inverse .navbar-brand {
 	padding-top: 5px;
+}
+.navbar-header {
+	border-bottom: none;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
 	background-color: #353535;
@@ -30,4 +37,10 @@
 	.navbar {
 		font-size: 15px;
 	}
+}
+.what-we-do-body .what-we-do-nav, .who-will-benefit-body .who-will-benefit-nav, .features-body .features-nav {
+	border-top: .3em solid #FFFFFF;
+}
+.what-we-do-body .what-we-do-nav > a, .who-will-benefit-body .who-will-benefit-nav > a, .features-body .features-nav > a {
+	margin-top: -7px;
 }
