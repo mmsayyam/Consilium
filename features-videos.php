@@ -18,14 +18,13 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
-    <link rel="shortcut icon" href="../favicon.ico"> 
 	<link href="gallery/css/least.min.css" rel="stylesheet" />
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	
 	
 	<script type="text/javascript">
-    	$(document).ready(function() {
+    	/*$(document).ready(function() {
 		    var track_load = 0; //total loaded record group(s)
 		    var loading  = false; //to prevents multipal ajax loads
 		    var total_groups = <?php echo $total_groups; ?>; //total record group(s)
@@ -65,7 +64,7 @@
 		            }
 		        }
 		    });
-		});
+		});*/
     </script>
 </head>
 <body class="features-body">
