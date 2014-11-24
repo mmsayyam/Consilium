@@ -25,7 +25,7 @@ if($_POST){
 	    {
 	        echo '
 	        	<li>
-                    <a href="gallery/images/'.$obj->g_original.'" title="'.$obj->g_title.'" data-subtitle="View Picture" data-caption="<strong>'.$obj->g_desc.'</strong> normal caption text">
+                    <a href="gallery/images/'.$obj->g_original.'" title="'.$obj->g_title.'" data-subtitle="View Picture" data-caption="<strong>'.$obj->g_desc.'</strong>">
                         <img src="gallery/images/'.$obj->g_thumb.'" alt="'.$obj->g_alt.'" />
                     </a>
                 </li>';

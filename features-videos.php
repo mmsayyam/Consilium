@@ -1,3 +1,11 @@
+<?php
+		$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
+		$results = $con->query("SELECT COUNT(*) as t_records FROM gallery");
+		$total_records = $results->fetch_object();
+		$items_per_group = 8;
+		$total_groups = ceil($total_records->t_records/$items_per_group);
+		$results->close();
+	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,14 +22,7 @@
 	<link href="gallery/css/least.min.css" rel="stylesheet" />
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<?php
-		$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
-		$results = $con->query("SELECT COUNT(*) as t_records FROM gallery");
-		$total_records = $results->fetch_object();
-		$items_per_group = 8;
-		$total_groups = ceil($total_records->t_records/$items_per_group);
-		$results->close();
-	?>
+	
 	
 	<script type="text/javascript">
     	$(document).ready(function() {
@@ -30,9 +31,7 @@
 		    var total_groups = <?php echo $total_groups; ?>; //total record group(s)
 		   
 		    $('#least-gallery').load("autoload_process.php", {'group_no':track_load}, function() {track_load++; $('.least-gallery').least();}); //load first group
-		   	$('#least-gallery').on('click','a',function() {
-				console.log('clicked');
-			});
+		   	
 		    $(window).scroll(function() { //detect page scroll
 		       
 		        if($(window).scrollTop() + $(window).height() == $(document).height())  //user scrolled to bottom of the page?

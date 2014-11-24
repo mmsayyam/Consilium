@@ -10,7 +10,7 @@
 	$.fn.least = function(options) {
 		var settings = $.extend({
 			'random': false,
-			'scrollToGallery': true,
+			'scrollToGallery': false,
 			'HiDPI': false
 		}, options);
 
@@ -53,7 +53,7 @@
 			/* Thumbnail */
 			$(this).find('li a').click(
 				function(e) {
-
+					
 					/* var */
 					var $$ = $(this),
 						path = $$.attr('href'),
