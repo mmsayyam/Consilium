@@ -67,6 +67,7 @@ p {
 	display: block;
 	margin-bottom: 2em;
 	background-color: #FFFFFF;
+	font-size: 24px;
 }
 .modal-footer {
 	text-align: left;

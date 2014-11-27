@@ -26,7 +26,7 @@
 		<h1>What We Do</h1>
 		<?php echo $record['content'] ?>
 
-		<p class="text-center"><a class="more-link" href="#">Watch our videos <img src="img/arrow_right.svg" style="height: 25px; width:auto;"/></a></p>
+		<p class="text-center"><a class="more-link" href="features-videos.php">Watch our videos <img src="img/arrow_right.svg" style="height: 25px; width:auto;"/></a></p>
 	</div>
 	<?php require_once 'includes/footer.php'; ?>
 
