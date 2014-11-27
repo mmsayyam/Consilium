@@ -1,13 +1,6 @@
-<?php 
- 	if(!isset($_SESSION)) {
- 		session_start();
- 	}
- 	if (!isset($_SESSION['username']) || $_SESSION['access'] != "admin") {
- 		header("Location: ../member-login.php");
- 	}
-?>
+<?php require_once 'check_admin.php'; ?>
 <?php
-	$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
+	require_once '../connections/connection.php';
 	$message = "";
 	if(isset($_POST['form-insert'])) {
 		$username = $_POST['username'];

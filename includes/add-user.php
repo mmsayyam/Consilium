@@ -7,9 +7,9 @@
  	}
 ?>
 <?php
-	$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
+	require_once '../connections/connection.php';
 	$message = "";
-	if(isset($_POST['form-insert'])) {
+	if(isset($_POST['new_user'])) {
 		$username = $_POST['username'];
 		$password = $_POST['pass'];
 		$confirm = $_POST['confirm-pass'];

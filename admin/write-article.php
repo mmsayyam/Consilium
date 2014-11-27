@@ -1,11 +1,4 @@
-<?php 
- 	if(!isset($_SESSION)) {
- 		session_start();
- 	}
- 	if (!isset($_SESSION['username']) || $_SESSION['access'] != "admin") {
- 		header("Location: member-login.php");
- 	}
- ?>
+<?php require_once 'check_admin.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>

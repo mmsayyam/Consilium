@@ -1,13 +1,8 @@
 <?php 
- 	if(!isset($_SESSION)) {
- 		session_start();
- 	}
- 	if (!isset($_SESSION['username']) || $_SESSION['access'] != "admin") {
- 		header("Location: ../member-login.php");
- 	}
+ 	require_once 'check_admin.php';
  	$message = "";
  	if (isset($_POST['submit'])) {
- 		$con = mysqli_connect('LocalHost', 'root', '', 'consultancy') or die(mysqli_error($con));
+ 		require_once '../connections/connection.php';
 
  		$query = "SELECT * FROM wwd";
 	 	$result = mysqli_query($con, $query);

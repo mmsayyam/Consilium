@@ -1,10 +1,11 @@
+<?php require_once 'connections/connection.php'; ?>
 <?php
-		$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
-		$results = $con->query("SELECT COUNT(*) as t_records FROM gallery");
-		$total_records = $results->fetch_object();
+		$query = "SELECT COUNT(*) FROM gallery";
+		$results = mysqli_query($con, $query);
+		$get_total_rows = mysqli_fetch_array($results);
 		$items_per_group = 8;
-		$total_groups = ceil($total_records->t_records/$items_per_group);
-		$results->close();
+		$total_pages = ceil($get_total_rows[0]/$items_per_group);
+		
 	?>
 <!DOCTYPE html>
 <html>
@@ -13,58 +14,54 @@
     <meta name="viewport" content="width=device-width">
 	<title>Consilium - Features & Videos</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
-	<link href="gallery/css/least.min.css" rel="stylesheet" />
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
 	
-	
+	<link rel="stylesheet" type="text/css" href="css/features-videos.css">
 	<script type="text/javascript">
-    	/*$(document).ready(function() {
-		    var track_load = 0; //total loaded record group(s)
-		    var loading  = false; //to prevents multipal ajax loads
-		    var total_groups = <?php echo $total_groups; ?>; //total record group(s)
+    	$(document).ready(function() {
+		    var track_click = 0; //total loaded record group(s)
+		    
+		    var total_pages = <?php echo $total_pages; ?>
 		   
-		    $('#least-gallery').load("autoload_process.php", {'group_no':track_load}, function() {track_load++; $('.least-gallery').least();}); //load first group
+		    $('#gallery').load("includes/autoload_process.php", {'group_no':track_click}, function() {track_click++;}); //load first group
 		   	
-		    $(window).scroll(function() { //detect page scroll
+		    $('.load_more').click(function (e) {
 		       
-		        if($(window).scrollTop() + $(window).height() == $(document).height())  //user scrolled to bottom of the page?
-		        {
+		        $(this).hide();
+		        $('.animation_image').show(); //show loading image
 		           
-		            if(track_load <= total_groups && loading==false) //there's more data to load
-		            {
-		                loading = true; //prevent further ajax loading
-		                $('.animation_image').show(); //show loading image
-		               
+		            if(track_click <= total_pages) //there's more data to load
+		            {  
 		                //load data from the server using a HTTP POST request
-		                $.post('autoload_process.php',{'group_no': track_load}, function(data){
-		                                   
-		                    $("#least-gallery").append(data); //append received data into the element
-		                    $('.least-gallery').least();
-		                    //hide loading image
+		                $.post('includes/autoload_process.php',{'group_no': track_click}, function(data){
+		                    
+		                    $('.load_more').show();
 		                    $('.animation_image').hide(); //hide loading image once data is received
-		                   
-		                    track_load++; //loaded group increment
-		                    loading = false;
-		               
+		                    $("#gallery").append(data); //append received data into the element
+		                    //hide loading image
+
+		                    track_click++; //loaded group increment
+		               	
 		                }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
 		                   
 		                    alert(thrownError); //alert with HTTP error
+		                    $('.load_more').show();
 		                    $('.animation_image').hide(); //hide loading image
-		                    loading = false;
 		                });
-		               
-		            }else {
-		            	$('.no-more').show();
+
 		            }
-		        }
-		    });
-		});*/
+		            else{
+		                	$('.load_more').attr('disabled', 'disabled');
+		                	$('.animation_image').hide();
+		                	$('.no-more').show();
+		            }
+		        });
+		});
     </script>
 </head>
 <body class="features-body">
@@ -74,36 +71,34 @@
 	<div class="container">
 		<h1 class="text-center">Features & Videos</h1>
 		<div class="main">
+			<div class="modal fade" id="myModal" tabindex="99999" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		      	<div class="modal-dialog">
+			        <div class="modal-content">
+					    <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					        <h4></h4>
+				    	</div>        
+			          	<div class="modal-body">           
+			          	</div>
+			          	<div class="modal-footer">
+			          	</div>
+			        </div><!-- /.modal-content -->
+		    	</div><!-- /.modal-dialog -->
+		    </div><!-- /.modal -->
 
-			<section id="least">
-				<div class="least-preview"></div>
-				<ul id="least-gallery" class="least-gallery">
-				</ul>
+			<ul id="gallery" class="gallery row">
+			</ul>
 
-				<div class="animation_image" style="display:none" align="center">
-					<img src="img/ajax-loader.gif">
-				</div>
-				<div class="no-more" style="display:none">
-					<h3 class="text-center">No more content to load.</h3>
-				</div>
-			</section>
-			
+			<div class="animation_image" style="display:none" align="center">
+				<img src="img/ajax-loader.gif">
+			</div>
+			<button class="load_more btn btn-load-more" >Load More</button>
+			<div class="no-more text-center" style="display:none">
+				<h3>No more content to load.</h3>
+			</div>
 			
 		</div>
 	</div>
-	<script src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="gallery/js/libs/least/least.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script>
-            /* Google Analytics */
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-16040332-11', 'leastjs.com');
-            ga('set', 'anonymizeIp', true);
-            ga('send', 'pageview');
-        </script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

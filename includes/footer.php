@@ -71,33 +71,9 @@
             <p class="footer-p"></p>
             <p class="footer-p"></p>
         </div>
-        <!--
-        <div class="row">
-            <div class="col-md-4 col-md-offset-3">
-                <ul class="text-left footer-links">
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">What we do</a></li>
-                    <li><a href="">Features and Videos</a></li>
-                    <li><a href="">Articles</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div>
-        -->    
-        
-            
-        </div>
-        <!--
-        <div class="row footer-links">
-            <div class="footer-buttons"><p class="cust-our-p"><a href="#contact" class="page-scroll btn btn-footer">About Us</a></p></div>
-            <div class="footer-buttons"><p class="cust-our-p"><a href="#contact" class="page-scroll btn btn-footer">What We Do</a></p></div>
-            <div class="footer-buttons"><p class="cust-our-p"><a href="#contact" class="page-scroll btn btn-footer">Features and Videos</a></p></div>
-            <div class="footer-buttons"><p class="cust-our-p"><a href="#contact" class="page-scroll btn btn-footer">Articles</a></p></div>
-            <div class="footer-buttons"><p class="cust-our-p"><a href="#contact" class="page-scroll btn btn-footer">Blog</a></p></div>
-        </div>
-        -->
         <div class="footer-cont row">
             <!-- <div class="footer-thephone"><small>© #Devs October, 2014 <span class="em"></span>| <span class="em"></span><span class="glyphicon glyphicon-earphone"><span class="footer-phone"> 0336-5119794 <span class="em"></span>| <span class="em"></span>Designed By: Nauroz Ahmad</span></span></small></div> -->
-            <div class="footer-thephone">© 2014 Consilium Corporation</div>
+            <div class="footer-thephone"><a href="member-login.php">©2014 Consilium Corporation</a></div>
             <div class="footer-thephone center-something"><a href="">Terms and Conditions</a></div>
             <div class="footer-thephone"><a href="">Privacy Policy</a></div>
         </div>

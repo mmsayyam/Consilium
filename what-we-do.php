@@ -1,5 +1,5 @@
 <?php 
- 	$con = mysqli_connect('LocalHost', 'root', '', 'consultancy');
+ 	require_once 'connections/connection.php';
 
  	$query = "SELECT * FROM wwd";
  	$result = mysqli_query($con, $query);

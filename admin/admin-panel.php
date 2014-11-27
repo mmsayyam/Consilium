@@ -1,11 +1,4 @@
-<?php 
- 	if(!isset($_SESSION)) {
- 		session_start();
- 	}
- 	if (!isset($_SESSION['username']) || $_SESSION['access'] != "admin") {
- 		header("Location: ../member-login.php");
- 	}
- ?>
+<?php require_once 'check_admin.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +19,7 @@
 			<a href="write-article.php">Articles</a>
 		</h3>
 		<h3 class="text-center">
-			Gallery
+			<a href="insert-gallery.php">Gallery</a>
 		</h3>
 		<h3 class="text-center">
 			<a href="change-wwd.php">Change Content of "What We Do"</a>

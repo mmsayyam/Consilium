@@ -1,4 +1,4 @@
-<?php $con = mysqli_connect('LocalHost', 'root', '', 'consultancy'); ?>
+<?php require_once 'connections/connection.php'; ?>
 <?php 
 	if(!isset($_SESSION)) {
 		session_start();
@@ -6,7 +6,7 @@
 ?>
 <?php
 	$message = "";
-	if(isset($_POST['form-insert'])) {
+	if(isset($_POST['form-insert']) && isset($_POST['trigger'])) {
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		$query = "SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}' ";
@@ -69,6 +69,7 @@
 			<div class="form-group">
 				<div class="col-sm-4 col-sm-offset-4">
 					<input type="submit" class="form-control" id="submit" name="submit" value="Submit">
+					<input type="hidden" name="trigger" value="trigger" id="trigger">
 				</div>
 			</div>
 		</form>
