@@ -37,7 +37,7 @@ $items_per_group = 8;
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 g_object">
-                    <a href=""><img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/></a>
+                    <a href="articles/article.php?article='.$row['g_id'].'"><img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/></a>
                 </li>
                 ';
 	    	}

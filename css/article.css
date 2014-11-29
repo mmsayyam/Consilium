@@ -1,0 +1,23 @@
+.a-img {
+	margin-top: 4em;
+	max-height: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 4em;
+}
+.a-title {
+	margin-top: 30px;
+	font-size: 5em;
+}
+.content {
+	font-size: 24px;
+	margin-bottom: 3em;
+}
+.more-articles {
+	border: 1px solid #F0F0F0;
+	padding-bottom: 2em;
+}
+li {
+	list-style: none;
+}
