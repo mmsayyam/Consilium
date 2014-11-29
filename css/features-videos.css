@@ -24,6 +24,7 @@ p {
 .gallery li {
 	list-style: none;
 	margin-bottom: 25px;
+	height: 300px;
 }
 .gallery li img {
 	cursor: pointer;

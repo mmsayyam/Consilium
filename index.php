@@ -10,12 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/video-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
 </head>
 <body>
     <?php require_once('includes/header.php') ?>
 	<?php require_once('slider/file/slider.html') ?>
-    <?php require_once 'slider/file/video-slider.html'; ?>
+    <div class="video-slider"><?php require_once 'includes/video.php'; ?></div>
     <?php require_once('includes/footer.php') ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -28,10 +28,10 @@
 	    }) 
     </script>
     <script type="text/javascript" src="js/slider-data.js"></script>
-    <script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="slider/js/jssor.js"></script>
     <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
-    
+    <script type="text/javascript" src="js/video-slider-data.js"></script>
+
     <script>
         jQuery(document).ready(function ($) {
             var videoOptions = {
@@ -79,6 +79,6 @@
             //responsive code end
         });
     </script>
-
+    
 </body>
 </html>
