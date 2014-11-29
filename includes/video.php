@@ -15,7 +15,7 @@
       	</div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
     
-    <div>
+    <div class="video-slider">
 		<span class="left"><img src="img/Arrow_Right_Filled.svg"></span>
 		<span style="float:right" class="right"><img src="img/Arrow_Right_Filled.svg"></span>
     		
@@ -29,6 +29,7 @@
 							<input type="hidden" value="<?php echo $row['g_content'] ?>" id="content">
 							<input type="hidden" value="<?php echo $row['g_title'] ?>" id="title">
 						</video>
+						<div class="overlay"><img src="img/video_play_icon.svg"></div>
 					</div>
 				</li>
 			<?php } while($row = mysqli_fetch_array($result)) ?>	
