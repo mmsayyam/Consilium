@@ -23,7 +23,7 @@ $items_per_group = 8;
 	    		echo '
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 g_object ">
 	        		<div class="embed-responsive embed-responsive-4by3">
-		        		<video class="embed-responsive-item" width="320" height="320" disabled>
+		        		<video class="embed-responsive-item" disabled>
 							<source src="gallery/videos/'.$row['g_video'].'" type="video/mp4">
 							Your browser does not support the video tag.
 							<input type="hidden" value="'.$row['g_content'].'" id="content">
@@ -37,7 +37,12 @@ $items_per_group = 8;
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 g_object">
-                    <a href="articles/article.php?article='.$row['g_id'].'"><img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/></a>
+                    <a href="articles/article.php?article='.$row['g_id'].'"><img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
+	                    <div class="img-overlay">
+	                    	<h2 style="display: inline">'.$row["g_title"].'</h2>
+	                    	<h4 style="display: inline" class="article-more text-right">Read More</h4>
+	                    </div>
+	                </a>
                 </li>
                 ';
 	    	}
@@ -49,19 +54,29 @@ $items_per_group = 8;
 
 ?>
 <script type="text/javascript">
-	$(".g_object video").click(function() {
-        var src = $(this).children("source").attr("src");
-        var content = $(this).children("#content").attr("value");
-        var title = $(this).children("#title").attr("value");
-        var video = '<div><video class="embed-responsive-item" width="600px" height="400px" controls autoplay><source src="'+src+'" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video></div>';
-        $("#myModal").modal();
-        $("#myModal").on("shown.bs.modal", function(){
-            $("#myModal .modal-body").html(video);
-            $("#myModal .modal-footer").html(content);
-            $("#myModal .modal-header h4").html(title);
-        });
-        $("#myModal").on("hidden.bs.modal", function(){
-            $("#myModal .modal-body").html('');
-        });
-	});
+	if($(window).width() < 769) {
+		$('video').removeAttr('disabled');
+		$('video').attr('controls', 'controns');
+		$('.overlay').css('display', 'none');
+	}
+	else {
+		$('video').attr('disabled', 'disabled');
+		$('video').removeAttr('controls');
+		$('.overlay').css('display', 'block');
+		$(".g_object video").click(function() {
+	        var src = $(this).children("source").attr("src");
+	        var content = $(this).children("#content").attr("value");
+	        var title = $(this).children("#title").attr("value");
+	        var video = '<div><video class="embed-responsive-item" width="600px" height="400px" controls autoplay><source src="'+src+'" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video></div>';
+	        $("#myModal").modal();
+	        $("#myModal").on("shown.bs.modal", function(){
+	            $("#myModal .modal-body").html(video);
+	            $("#myModal .modal-footer").html(content);
+	            $("#myModal .modal-header h4").html(title);
+	        });
+	        $("#myModal").on("hidden.bs.modal", function(){
+	            $("#myModal .modal-body").html('');
+	        });
+		});
+	}
 </script>

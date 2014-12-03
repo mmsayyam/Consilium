@@ -22,6 +22,7 @@
 			}
 			else {
 				$message = "Error Occured";
+				echo mysqli_error($con);
 			}
 		}
 	}
