@@ -63,10 +63,10 @@ $items_per_group = 8;
 		$('video').attr('disabled', 'disabled');
 		$('video').removeAttr('controls');
 		$('.overlay').css('display', 'block');
-		$(".g_object video").click(function() {
-	        var src = $(this).children("source").attr("src");
-	        var content = $(this).children("#content").attr("value");
-	        var title = $(this).children("#title").attr("value");
+		$(".g_object").click(function() {
+	        var src = $(this).find("source").attr("src");
+	        var content = $(this).find("#content").attr("value");
+	        var title = $(this).find("#title").attr("value");
 	        var video = '<div><video class="embed-responsive-item" width="600px" height="400px" controls autoplay><source src="'+src+'" type="video/mp4"><source src="movie.ogg" type="video/ogg">Your browser does not support the video tag.</video></div>';
 	        $("#myModal").modal();
 	        $("#myModal").on("shown.bs.modal", function(){

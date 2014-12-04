@@ -74,6 +74,17 @@
 	pointer-events: none;
 	position: absolute;
 	background-color: rgba(0,0,0,0.3);
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.video-slider video:hover + .overlay {
+	background-color: rgba(0,0,0,0.7);
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 .video-slider .overlay img{
 	width: 20%;
