@@ -27,11 +27,7 @@
 	display: inline-block;
 	margin-right: 4em;
 }
-@media screen and (max-width: 768px) {
-	.video-slider li {
-		width: 80%;
-	}
-}
+
 .video-slider video {
 	background-color: #000;
 	cursor: pointer;
@@ -105,4 +101,13 @@
 .close {
 	opacity: .8;
 	font-size: 28px;
+}
+@media screen and (max-width: 768px) {
+	.video-slider li {
+		width: 95%;
+	}
+	.video-slider .right {
+		right: 4.4em;
+		margin-right: 0px;
+	}
 }

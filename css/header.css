@@ -9,7 +9,7 @@
 	height: 100px;
 }
 .navbar-inverse .navbar-collapse {
-	border-top: 1px solid #414141;
+	border-top: none;
 	background-color: #414141;
 }
 .navbar-inverse .navbar-nav > li > a{

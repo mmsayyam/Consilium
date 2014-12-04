@@ -23,7 +23,7 @@
             
         </div>
         <div>
-            <ul class="text-center">
+            <ul class="text-center" style="padding-left: 0px;">
                 <li><a href="member-login.php">©2014 Consilium Corporation</a></li>
                 <li><a href="">Terms and Conditions</a></li>
                 <li><a href="">Privacy Policy</a></li>
