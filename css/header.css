@@ -26,6 +26,7 @@
 .navbar-inverse .navbar-nav > li > a:hover {
 	background-color: #353535;
 	vertical-align: middle;
+	opacity: 1;
 }
 
 @media screen and (max-width: 1000px) {
@@ -43,4 +44,7 @@
 }
 .what-we-do-body .what-we-do-nav > a, .who-will-benefit-body .who-will-benefit-nav > a, .features-body .features-nav > a {
 	margin-top: -7px;
+}
+nav > a:hover {
+	opacity: 1;
 }
