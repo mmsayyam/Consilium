@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
 
@@ -26,7 +27,7 @@
 		<h1>What We Do</h1>
 		<?php echo $record['content'] ?>
 
-		<p class="text-center"><a class="more-link" href="features-videos.php">Watch our videos <img src="img/arrow_right.svg" style="height: 25px; width:auto;"/></a></p>
+		<div style="font-size: 2em; margin-bottom: 1.5em" class="text-center"><a class="more-link text-center" href="features-videos.php">Watch our videos <img src="img/arrow_right.svg" style="height: 25px; width:auto;"/></a></div>
 	</div>
 	<?php require_once 'includes/footer.php'; ?>
 

@@ -6,7 +6,7 @@
 	background-color: #414141;
 	box-shadow: 0px 2px 5px #000000;
 	z-index: 200;
-	height: 80px;
+	height: 98px;
 }
 .navbar-inverse .navbar-collapse {
 	border-top: 1px solid #414141;
@@ -14,8 +14,8 @@
 }
 .navbar-inverse .navbar-nav > li > a{
 	color: #FFFFFF;
-	height: 80px;
-	padding-top: 27px;
+	height: 98px;
+	padding-top: 36px;
 }
 .navbar-inverse .navbar-brand {
 	padding-top: 5px;

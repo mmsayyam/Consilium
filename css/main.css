@@ -51,8 +51,10 @@
 	border-bottom: 1px solid #ddd;
 }
 body {
+	font-family: 'OpenSansCondensed', sans-serif;
+}
+body p {
 	font-family: 'OpenSans', sans-serif;
-
 }
 .editor {
 	overflow: scroll;
@@ -60,15 +62,24 @@ body {
 }
 a {
 	color: #000000;
+	-webkit-transition-duration: 0.2s;
+  	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
 }
 a:hover {
 	text-decoration: none;
-	color: rgba(0, 0, 0, 0.2);
+	color: #000000;
+	opacity: .2;
+	-webkit-transition-duration: 0.2s;
+  	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
 }
 .heading {
 	margin-bottom: 3em;
 }
 @font-face {
-	font-family: 'OpenSans';
+	font-family: 'OpenSansCondensed';
 	src: url(../fonts/OpenSans-CondLight.ttf);
 }
