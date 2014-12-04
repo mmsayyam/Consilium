@@ -45,6 +45,11 @@ p {
 	margin-bottom: 4em;
 	margin-top: 2em;
 }
+.img_object {
+	max-height: 220px;
+	margin-bottom: 4em;
+	margin-top: 2em;
+}
 .gallery li .article-img {
 	width: auto;
 }
@@ -144,6 +149,17 @@ video {
 	}
 	.g_object {
 		max-height: 179px;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	.img_object {
+		max-height: 179px;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
 	}
 	.overlay img {
 		padding-top: 16%;
@@ -162,13 +178,25 @@ video {
 	}
 	.g_object {
 		max-height: 207px;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	.img_object {
+		max-height: 207px;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
 	}
 	.overlay img {
 		padding-top: 16%;
 	}
 	.img-overlay {
-		max-height: 197px;
+		max-height: 199px;
 		max-width: 322px;
+		margin-bottom: -2px;
 	}
 }
 
@@ -193,16 +221,31 @@ video {
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
+	}
+	.img_object {
+		max-height: 268px;
+		width: 426px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		-webkit-transition-duration: 0.4s;
+	  	-moz-transition-duration: 0.4s;
+		-o-transition-duration: 0.4s;
+		transition-duration: 0.4s;
 	}
 	.overlay img {
 		padding-top: 16%;
 	}
 	.img-overlay {
-		max-height: 300px;
+		max-height: 302px;
 		max-width: 400px;
 		height: 240px;
 		width: 388px;
-		bottom: 24px;
+		bottom: 26px;
 	}
 }
 .thumbnail {

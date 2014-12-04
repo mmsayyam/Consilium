@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="../index.php"><img style="width: auto; height: 70px;" src="../img/Consilium.svg"></a>
+			<a class="navbar-brand" href="../index.php"><img style="width: auto; height: 90px;" src="../img/Consilium.svg"></a>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsable-nav">
 			<ul class="nav navbar-nav navbar-right">
