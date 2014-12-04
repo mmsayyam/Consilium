@@ -71,8 +71,6 @@ $items_per_group = 8;
 	        $("#myModal").modal();
 	        $("#myModal").on("shown.bs.modal", function(){
 	            $("#myModal .modal-body").html(video);
-	            $("#myModal .modal-footer").html(content);
-	            $("#myModal .modal-header h4").html(title);
 	        });
 	        $("#myModal").on("hidden.bs.modal", function(){
 	            $("#myModal .modal-body").html('');
