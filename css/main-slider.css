@@ -69,3 +69,14 @@
 		font-size: 2em;
 	}
 }
+@media screen and (max-width: 363px) {
+	.carousel-caption {
+		top: 25%;
+	}
+	.main-slider-line-1 {
+		margin-left: -3em;
+	}
+	.main-slider-line-2 {
+		margin-left: 3em;
+	}
+}

@@ -7,7 +7,7 @@ footer {
 	background-image: url('img/bg.png');
 }
 .fb {
-	width: 30px;
+	width: 25px;
 	margin-right: 10px;
 	height: auto;
 	-webkit-transition-duration: 0.4s;
@@ -16,7 +16,7 @@ footer {
 	transition-duration: 0.4s;
 }
 .tt {
-	width: 30px;
+	width: 25px;
 	margin-right: 10px;
 	height: auto;
 	-webkit-transition-duration: 0.4s;
@@ -26,7 +26,7 @@ footer {
 	
 }
 .tm {
-	width: 30px;
+	width: 25px;
 	margin-right: 10px;
 	height: auto;
 	-webkit-transition-duration: 0.4s;

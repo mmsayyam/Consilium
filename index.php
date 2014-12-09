@@ -87,11 +87,12 @@
     </script>
     <script type="text/javascript">
         var anchor = $('.anchor').position().left;
-        console.log(anchor);
+        var width = $('.videos li').width() + 56;
+        console.log(width);
         $(".left").on('click', function() {
             if($('.videos').scrollLeft() > 0) {
                 $('.videos').animate({
-                    scrollLeft: $('.videos').scrollLeft() - 447
+                    scrollLeft: $('.videos').scrollLeft() - width
                     
                 }, 300);
             }
@@ -105,7 +106,7 @@
         $(".right").on('click', function() {
             {
                 $('.videos').animate({
-                    scrollLeft: $('.videos').scrollLeft() + 447
+                    scrollLeft: $('.videos').scrollLeft() + width
                 }, 300);
             }
         });

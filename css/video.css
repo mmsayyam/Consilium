@@ -1,5 +1,6 @@
 .video-slider {
 	position: relative;
+	margin-left: -10px;
 }
 .video-slider ul {
 	width: 100%;
