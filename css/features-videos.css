@@ -23,7 +23,7 @@ p {
 }
 .gallery li {
 	list-style: none;
-	margin-bottom: 25px;
+	margin-bottom: 3em;
 	height: 300px;
 }
 .gallery li img {
@@ -218,7 +218,7 @@ video {
 	.g_object {
 		max-height: 268px;
 		width: 426px;
-		margin-left: auto;
+		margin-left: 20%;
 		margin-right: auto;
 		display: block;
 		-webkit-transition-duration: 0.4s;
@@ -229,7 +229,7 @@ video {
 	.img_object {
 		max-height: 268px;
 		width: 426px;
-		margin-left: auto;
+		margin-left: 20%;
 		margin-right: auto;
 		display: block;
 		-webkit-transition-duration: 0.4s;

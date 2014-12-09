@@ -11,10 +11,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/video.css">
+    <link rel="stylesheet" type="text/css" href="css/main-slider.css">
 </head>
 <body>
     <?php require_once('includes/header.php') ?>
-	<?php require_once('slider/file/slider.html') ?>
+	<div><?php require_once('includes/slider.php') ?></div>    
     <div class="video-slider"><?php require_once 'includes/video.php'; ?></div>
     <?php require_once('includes/footer.php') ?>
 
@@ -79,6 +80,10 @@
             //responsive code end
         });
     </script>
-    
+    <script type="text/javascript">
+    $('.slide').carousel({
+        interval: 2000
+    });
+</script>
 </body>
 </html>
