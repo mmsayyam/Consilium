@@ -61,3 +61,11 @@
 .main-slider-line-2 {
 	margin-left: 10em;
 }
+@media screen and (max-width: 640px) {
+	.carousel-caption {
+		top: 25%;
+	}
+	.carousel-caption h3 {
+		font-size: 2em;
+	}
+}
