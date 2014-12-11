@@ -121,6 +121,7 @@
 		margin-right: 4%;
 	}
 }
+<<<<<<< HEAD
 @media screen and (max-width: 410px) {
 	.video-slider .right {
 		margin-right: 2%;
@@ -131,6 +132,8 @@
 		margin-right: 0%;
 	}
 }
+=======
+>>>>>>> 94ea030dcd6c7a197f78d453e595422a6ac31221
 .anchor {
 	width: 10px;
 }

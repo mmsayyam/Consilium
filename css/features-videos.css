@@ -213,8 +213,13 @@ h4 {
 		display: block;
 	}
 	.g_object {
+<<<<<<< HEAD
 		max-height: 220px;
 		width: 422px;
+=======
+		max-height: 268px;
+		width: 426px;
+>>>>>>> 94ea030dcd6c7a197f78d453e595422a6ac31221
 		margin-left: 20%;
 		margin-right: auto;
 		display: block;

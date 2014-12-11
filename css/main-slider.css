@@ -69,7 +69,11 @@
 		font-size: 2em;
 	}
 }
+<<<<<<< HEAD
 @media screen and (max-width: 450px) {
+=======
+@media screen and (max-width: 363px) {
+>>>>>>> 94ea030dcd6c7a197f78d453e595422a6ac31221
 	.carousel-caption {
 		top: 25%;
 	}
