@@ -1,28 +1,28 @@
+var anchor = $('.anchor').position().left;
+        var width = $('.videos li').width() + 74;
+        console.log(width);
+        $(".left").on('click', function() {
+            if($('.videos').scrollLeft() > 0) {
+                $('.videos').animate({
+                    scrollLeft: $('.videos').scrollLeft() - width
+                    
+                }, 300);
+            }
+            else if($('.videos').scrollLeft() == 0) {
+                $('.videos').animate({
+                    scrollLeft: anchor
+                }, 300);
+            }
+        });
 
-    $(document).ready(function() {
-    	$(".left").on('click', function() {
-    		if($('.videos').scrollLeft() > 0) {
-	    		$('.videos').animate({
-	    			scrollLeft: $('.videos').scrollLeft() - 600
-	    			
-	    		}, 300);
-    		}
-    		else if($('.videos').scrollLeft() == 0) {
-    			$('.videos').animate({
-	    			scrollLeft: $('.videos').width()
-	    		}, 300);
-    		}
-    	});
-
-    	$(".right").on('click', function() {
-    		{
-    			$('.videos').animate({
-	    			scrollLeft: $('.videos').scrollLeft() + 600
-	    		}, 300);
-	    		console.log($('.videos').scrollLeft());
-    		}
-    	});
-    });
+        $(".right").on('click', function() {
+            {
+                $('.videos').animate({
+                    scrollLeft: $('.videos').scrollLeft() + width
+                }, 300);
+            }
+        });
+    
 
     if($(window).width() < 769) {
         $('video').removeAttr('disabled');
@@ -50,5 +50,3 @@
             });
         });
     }
-
-	

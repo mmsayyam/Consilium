@@ -10,7 +10,9 @@
 }
 .navbar-inverse .navbar-collapse {
 	border-top: none;
+	
 	background-color: #414141;
+	box-shadow: 0px 1px 0px #414141 inset;
 }
 .navbar-inverse .navbar-nav > li > a{
 	color: #FFFFFF;
@@ -23,11 +25,7 @@
 .navbar-header {
 	border-bottom: none;
 }
-.navbar-inverse .navbar-nav > li > a:hover {
-	background-color: #353535;
-	vertical-align: middle;
-	opacity: 1;
-}
+
 .navbar-inverse .navbar-header > a:hover {
 	opacity: 1;
 }
@@ -49,4 +47,30 @@
 }
 nav > a:hover {
 	opacity: 1;
+}
+#collapsable-nav a {
+	background-color: #414141;
+}
+#collapsable-nav a:hover {
+	background-color: #353535;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+	background-color: #353535;
+	vertical-align: middle;
+	opacity: 1;
+}
+@media screen and (max-width: 767px) {
+	#collapsable-nav {
+		padding-top: 1em;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		height: 60px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 3em;
+	}
+}
+.navbar-toggle {
+	margin-top: 30px;
+	margin-bottom: 30px;
 }

@@ -24,7 +24,7 @@
     		
 		<ul class="videos">
 			
-			<?php do { ?>
+			<?php $l = 0; do { $l++;?>
 				<li>
 					<div class="embed-responsive embed-responsive-4by3 video-cont">
 						<video class="embed-responsive-item" disabled>
@@ -34,8 +34,13 @@
 						</video>
 						<div class="overlay"><img src="img/video_play_icon.svg"></div>
 					</div>
+					<?php if ($l == 5) {  ?>
+						<div class="anchor"></div>
+					<?php } ?>
 				</li>
-			<?php } while($row = mysqli_fetch_array($result)) ?>	
+			<?php } while($row = mysqli_fetch_array($result)) ?>
+					
+				
 		</ul>
 		<div class="heading">
 	        <h1 class="text-center"><a href="features-videos.php">More Videos <img style="height: 25px; width:auto;" src="img/arrow_right.svg"></a></h1>

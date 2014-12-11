@@ -13,10 +13,10 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="what-we-do-nav"><a href="../what-we-do.php"><span>What we do</span></a></li>
 				<li class="who-will-benefit-nav"><a href="">Who will benefit</a></li>
-				<li><a href="">Our offerings</a></li>
+				<li><a href="../under.php">Our offerings</a></li>
 				<li class="features-nav"><a href="../features-videos.php">Features & Videos</a></li>
-				<li><a href="">About us</a></li>
-				<li><a href="">Contact us</a></li>
+				<li><a href="../under.php">About us</a></li>
+				<li><a href="../under.php">Contact us</a></li>
 			</ul>
 			<!-- <ul class="nav navbar-nav navbar-right">
 				<?php if( isset( $_SESSION['username'] ) ) { ?>

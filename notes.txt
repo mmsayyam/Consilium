@@ -1,0 +1,4 @@
+Features & Videos
+	Resolutions: All
+	Message: Correct Article Heading according to the possibility of long articles headings.
+
