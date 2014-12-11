@@ -61,7 +61,6 @@ nav > a:hover {
 }
 @media screen and (max-width: 767px) {
 	#collapsable-nav {
-<<<<<<< HEAD
 		padding-top: 1em;
 	}
 	.navbar-inverse .navbar-nav > li > a {
@@ -74,8 +73,4 @@ nav > a:hover {
 .navbar-toggle {
 	margin-top: 30px;
 	margin-bottom: 30px;
-=======
-		padding-top: 3em;
-	}
->>>>>>> 94ea030dcd6c7a197f78d453e595422a6ac31221
 }
