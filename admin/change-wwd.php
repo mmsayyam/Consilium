@@ -46,7 +46,6 @@
 	<title>Consultancy: Write Article</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-text.css"> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" type="text/css" href="../css/jquery-te-1.4.0.css">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	
@@ -127,6 +126,6 @@
 		var jqteStatus = true;
 	</script>
 	-->
-	<script type="text/javascript">
+	
 </body>
 </html>

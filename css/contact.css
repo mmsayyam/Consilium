@@ -1,0 +1,27 @@
+.container {
+	margin-bottom: 3em;
+	margin-top: 3em;
+}
+h1 {
+	margin-top: 0.5em;
+	font-size: 3em;
+	color: #674172;
+	margin-bottom: .5em;
+}
+.btn-default{
+	font-size: 2em;
+	border: none;
+	border-bottom: 1px solid #000;
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.btn-default:hover {
+	background-color: #fff;
+	color: rgba(0,0,0,0.2);
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
