@@ -10,7 +10,7 @@
         $message = $_POST['message'];
 
         $phpmailer->IsSMTP();
-        $phpmailer->Host = "tls://smtp.gmail.com";
+        $phpmailer->Host = "smtp.gmail.com";
         $phpmailer->SMTPAuth = true;
         $phpmailer->SMTPSecure = 'tls';
         $phpmailer->Port = 587;
@@ -28,7 +28,7 @@
 
         if(!$phpmailer->Send()) {
             echo "Mailer Error: " . $phpmailer->ErrorInfo;
-            
+
         }
         else {
             header("Location: contact-thanks.php");
