@@ -55,19 +55,19 @@
         <h1 class="text-center">Contact Us</h1>
         <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
             <div class="form-group">
-                <div class="text-center"><label for="name" class="col-sm-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label></div>
+                <div class="text-center contact-label"><label for="name" class="col-sm-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label></div>
                 <div class="col-sm-8">
                     <input type="text" class="form-control" name="name" placeholder="Your Name">
                 </div>
             </div>
             <div class="form-group">
-                <div class="text-center"><label for="email" class="col-sm-2 control-label"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></label></div>
+                <div class="text-center contact-label"><label for="email" class="col-sm-2 control-label"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></label></div>
                 <div class="col-sm-8">
                     <input type="email" class="form-control" name="email" placeholder="Your Email">
                 </div>
             </div>
             <div class="form-group">
-                <div class="text-center"><label for="message" class="col-sm-2 control-label"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></label></div>
+                <div class="text-center contact-label"><label for="message" class="col-sm-2 control-label"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></label></div>
                 <div class="col-sm-8">
                     <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
                 </div>

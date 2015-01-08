@@ -29,3 +29,8 @@ form span {
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
+@media screen and (max-width: 767px) {
+	.glyphicon{
+		font-size: 1.6em;
+	}
+}
