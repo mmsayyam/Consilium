@@ -16,7 +16,7 @@
 				<li><a href="under.php">Our offerings</a></li>
 				<li class="features-nav"><a href="features-videos.php">Features & Videos</a></li>
 				<li><a href="under.php">About us</a></li>
-				<li><a href="contact.php">Contact us</a></li>
+				<li class="contact-us-nav"><a href="contact.php">Contact us</a></li>
 			</ul>
 			<!-- <ul class="nav navbar-nav navbar-right">
 				<?php if( isset( $_SESSION['username'] ) ) { ?>

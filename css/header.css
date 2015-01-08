@@ -10,7 +10,6 @@
 }
 .navbar-inverse .navbar-collapse {
 	border-top: none;
-	
 	background-color: #414141;
 	box-shadow: 0px 1px 0px #414141 inset;
 }
@@ -38,22 +37,17 @@
 	.navbar {
 		font-size: 15px;
 	}
-}
-.what-we-do-body .what-we-do-nav, .who-will-benefit-body .who-will-benefit-nav, .features-body .features-nav {
-	border-top: .3em solid #FFFFFF;
-}
-.what-we-do-body .what-we-do-nav > a, .who-will-benefit-body .who-will-benefit-nav > a, .features-body .features-nav > a {
-	margin-top: -7px;
+	#collapsable-nav a {
+	background-color: #414141;
+	}
+	#collapsable-nav a:hover {
+		background-color: #353535;
+	}
 }
 nav > a:hover {
 	opacity: 1;
 }
-#collapsable-nav a {
-	background-color: #414141;
-}
-#collapsable-nav a:hover {
-	background-color: #353535;
-}
+
 .navbar-inverse .navbar-nav > li > a:hover {
 	background-color: #353535;
 	vertical-align: middle;
@@ -73,4 +67,7 @@ nav > a:hover {
 .navbar-toggle {
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+.what-we-do-body .what-we-do-nav a, .who-will-benefit-body .who-will-benefit-nav a, .features-body .features-nav a, .contact-us-body .contact-us-nav a{
+	background-color: #353535;
 }
