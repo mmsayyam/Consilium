@@ -37,18 +37,17 @@ $items_per_group = 8;
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
 	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img_object">
-                    <a href="articles/article.php?article='.$row['g_id'].'"><img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
+                    <a href="articles/article.php?article='.$row['g_id'].'">
+                    	<img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
 	                    <div class="img-overlay">
-	                    	<h2 style="display: inline">'.$row["g_title"].'</h2>
-	                    	<h4 style="display: inline" class="article-more text-right">Read More</h4>
+	                    	<h2>'.$row["g_title"].'</h2>
+	                    	<h4>Read More</h4>
 	                    </div>
 	                </a>
                 </li>
                 ';
 	    	}
-	        
 	    }
-
 	unset($obj);
 	$con->close();
 
