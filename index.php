@@ -23,7 +23,7 @@
 	
     
     <script type="text/javascript" src="js/slider-data.js"></script>
-    <script type="text/javascript" src="js/video-slider-data.js"></script>
+    
     
 </body>
 </html>

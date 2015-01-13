@@ -1,28 +1,26 @@
 var anchor = $('.anchor').position().left;
-        var width = $('.videos li').width() + 74;
-        console.log(width);
-        $(".left").on('click', function() {
-            if($('.videos').scrollLeft() > 0) {
-                $('.videos').animate({
-                    scrollLeft: $('.videos').scrollLeft() - width
-                    
-                }, 300);
-            }
-            else if($('.videos').scrollLeft() == 0) {
-                $('.videos').animate({
-                    scrollLeft: anchor
-                }, 300);
-            }
-        });
+var mouseStill = false;
+var trigger = $('.videos');
 
-        $(".right").on('click', function() {
-            {
-                $('.videos').animate({
-                    scrollLeft: $('.videos').scrollLeft() + width
-                }, 300);
-            }
-        });
-    
+
+$(".left").mousedown(goLeft).mouseup(stopScroll);
+$(".right").mousedown(goRight).mouseup(stopScroll);
+
+function goLeft() {
+        trigger.animate({
+            scrollLeft: '-=150'
+        }, goLeft);
+}
+
+function goRight() {
+        trigger.animate({
+            scrollLeft: '+=150'
+        }, goRight);
+}
+
+function stopScroll() {
+    trigger.stop();
+}
 
     if($(window).width() < 769) {
         $('video').removeAttr('disabled');

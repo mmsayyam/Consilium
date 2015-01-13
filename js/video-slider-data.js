@@ -1,25 +1,27 @@
 var anchor = $('.anchor').position().left;
         var width = $('.videos li').width() + 74;
         console.log(width);
-        $(".left").on('click', function() {
+        $(".left").on('mouseDown', function() {
             if($('.videos').scrollLeft() > 0) {
                 $('.videos').animate({
                     scrollLeft: $('.videos').scrollLeft() - width
-                    
                 }, 300);
+                console.log("left");
             }
             else if($('.videos').scrollLeft() == 0) {
                 $('.videos').animate({
                     scrollLeft: anchor
                 }, 300);
+                console.log("left");
             }
         });
 
-        $(".right").on('click', function() {
+        $(".right").on('mouseDown', function() {
             {
                 $('.videos').animate({
                     scrollLeft: $('.videos').scrollLeft() + width
                 }, 300);
+                console.log("right");
             }
         });
     
