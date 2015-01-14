@@ -9,13 +9,13 @@ $(".right").mousedown(goRight).mouseup(stopScroll);
 function goLeft() {
         trigger.animate({
             scrollLeft: '-=150'
-        }, goLeft);
+        },100, goLeft);
 }
 
 function goRight() {
         trigger.animate({
             scrollLeft: '+=150'
-        }, goRight);
+        },100, goRight);
 }
 
 function stopScroll() {
