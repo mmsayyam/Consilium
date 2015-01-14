@@ -147,12 +147,14 @@ footer ul {
 	list-style: none;
 	text-align: left;
 	margin-bottom: 16px;
+	padding-left: 10%;
 }
 
 .related-links li {
 	text-align: left;
 	margin-right: 2.4em;
 }
+
 .connect-links li {
 	text-align: left;
 	margin-right: 2.1em;
@@ -164,15 +166,59 @@ footer ul li {
 	line-height: 35px;
 }
 footer h3 {
-	margin-left: 38px;
+	margin-left: 10%;
 	font-size: 1.4em;
 	margin-bottom: 1em;
 	color: rgba(221, 221, 221, 0.2);
 }
+.connect-head {
+	margin-left: 38px;
+}
+
 footer ul.text-center {
-	border-top: 1px solid #808080;
+	margin-left: 5.6%;
+	border-top: 2px solid #808080;
 	padding-top: 1em;
 	margin-top: 1em;
+	width: 84.5%;
+}
+@media screen and (max-width: 992px) {
+	footer ul{
+		padding-left: 38px;
+	}
+	footer h3 {
+		margin-left: 38px;
+	}
+	footer ul.text-center {
+		margin-left: 3.7%;
+	}
+}
+@media screen and (max-width: 1210px) {
+	footer ul.text-center {
+		width: 85.5%;
+		margin-left: 5.6%;
+	}
+}
+@media screen and (max-width: 1200px) {
+	footer ul.text-center {
+		margin-left: 4.7%;
+	}
+}
+@media screen and (max-width: 1110px) {
+	footer ul.text-center {
+		width: 87.5%;
+	}
+}
+@media screen and (max-width: 1010px) {
+	footer ul.text-center {
+		width: 89.5%;
+		margin-left: 38px;
+	}
+}
+@media screen and (max-width: 700px) {
+	footer ul.text-center {
+		margin-left: 38px;
+	}
 }
 footer ul.text-center li {
 	margin-right: 1.8em;

@@ -11,7 +11,7 @@
                     <li><a href="">Features & Videos</a></li>  
                 </ul>
             </div>
-            <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
+            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-2">
                 <h3 class="text-left connect-head">GET IN TOUCH</h3>
                 <ul class="connect-links">
                     <li><a href=""><img class="fb connect" src="img/facebook.svg"></a></li>

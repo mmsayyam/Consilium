@@ -6,7 +6,7 @@
 h1 {
 	margin-top: 0.5em;
 	font-size: 3em;
-	color: #674172;
+	color: #000000;
 	margin-bottom: 0.3em;
 }
 p {
@@ -132,14 +132,14 @@ video {
 	margin-top: 5px;
 	margin-left: 0.5em;
 	margin-bottom: 0px;
-	font-size: 26px;
+	font-size: 20px;
 }
 h4 {
 	margin-left: 0.8em;
-	margin-top: 0px;
+	margin-top: 5px;
 	color: #FFF;
 	bottom: 10px;
-	font-size: 18px;
+	font-size: 16px;
 }
 h4:hover {
 	text-decoration: underline;

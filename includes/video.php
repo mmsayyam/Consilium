@@ -25,7 +25,7 @@
 		<ul class="videos">
 			
 			<?php $l = 0; do { $l++;?>
-				<li>
+				<li class="list-<?php echo $l ?>">
 					<div class="embed-responsive embed-responsive-4by3 video-cont">
 						<video class="embed-responsive-item" disabled>
 							<source src="gallery/videos/<?php echo $row['g_video'] ?>">

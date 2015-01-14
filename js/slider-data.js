@@ -1,7 +1,29 @@
 var anchor = $('.anchor').position().left;
 var trigger = $('.videos');
+var numbers = 2;
+for(var i = 1; i < 6; i++) {
+    console.log('Item '+ i + ': ' + $('.list-' + i).position().left)
+}
 
-if($(window).width() < 768) {
+$('.right').click(function() {
+    $('.videos').animate({
+        scrollLeft: $('.list-' + numbers).position().left - 39
+    }, 300);
+    numbers += 1;
+});
+
+$('.left').click(function() {
+    if(numbers > 0) {
+        numbers -= 1;
+        $('videos').animate({
+            scrollLeft: $('.list-' + numbers).position().left,
+        }, 300);
+
+    }
+    
+})
+
+/*if($(window).width() < 768) {
     function goLeft() {
         trigger.animate({
             scrollLeft: '-=75'
@@ -36,7 +58,7 @@ if($(window).width() > 768) {
 
 function stopScroll() {
     trigger.stop();
-}
+}*/
 
 
 

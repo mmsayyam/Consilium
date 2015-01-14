@@ -41,7 +41,7 @@ $items_per_group = 8;
                     	<img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
 	                    <div class="img-overlay">
 	                    	<h2>'.$row["g_title"].'</h2>
-	                    	<h4>Read More</h4>
+	                    	<h4>Read more</h4>
 	                    </div>
 	                </a>
                 </li>

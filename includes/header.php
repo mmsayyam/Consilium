@@ -13,7 +13,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="what-we-do-nav"><a href="what-we-do.php"><span>What we do</span></a></li>
 				<li class="who-will-benefit-nav"><a href="under.php">Who will benefit</a></li>
-				<li><a href="under.php">Our offerings</a></li>
+				<li class="offering-nav"><a href="offerings.php">Our offerings</a></li>
 				<li class="features-nav"><a href="features-videos.php">Features & Videos</a></li>
 				<li><a href="under.php">About us</a></li>
 				<li class="contact-us-nav"><a href="contact.php">Contact us</a></li>

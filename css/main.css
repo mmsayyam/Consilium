@@ -87,3 +87,6 @@ a:hover {
 	font-family: 'OpenSans';
 	src: url(../fonts/OpenSans-Light.ttf);
 }
+.cke_button__source {
+	display: none;
+}
