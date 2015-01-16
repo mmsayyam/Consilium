@@ -19,7 +19,9 @@
 	<div><?php require_once('includes/slider.php') ?></div>
 	<?php require_once('includes/video-carousel.php') ?>
     <div class="video-slider"><?php require_once 'includes/video.php'; ?></div>
-
+    <div class="heading">
+        <h1 class="text-center"><a href="features-videos.php">More Videos <img style="height: 25px; width:auto;" src="img/arrow_right.svg"></a></h1>
+    </div>
 
     <?php require_once('includes/footer.php') ?>
 

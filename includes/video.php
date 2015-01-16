@@ -44,7 +44,5 @@
 					
 				
 		</ul>
-		<div class="heading">
-	        <h1 class="text-center"><a href="features-videos.php">More Videos <img style="height: 25px; width:auto;" src="img/arrow_right.svg"></a></h1>
-	    </div>
 	</div>
+	
