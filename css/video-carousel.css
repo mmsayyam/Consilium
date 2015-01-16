@@ -3,6 +3,7 @@ video {
 }
 .video-carousel {
 	display: none;
+	position: relative;
 }
 @media screen and (max-width: 768px) {
 	.video-carousel {
@@ -11,4 +12,18 @@ video {
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
 	top: 45%;
+}
+.left-arrow, .right-arrow {
+    position: absolute;
+    margin-left: -2.5em;
+    height: 23%;
+    top: 34%;
+}
+.left-arrow img {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.left-arrow img, .right-arrow img {
+	height: 100%;
 }
