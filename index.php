@@ -11,19 +11,21 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/video.css">
     <link rel="stylesheet" type="text/css" href="css/main-slider.css">
+    <link rel="stylesheet" type="text/css" href="css/video-carousel.css">
 </head>
 <body>
     <?php require_once('includes/header.php') ?>
-	<div><?php require_once('includes/slider.php') ?></div>    
+
+	<div><?php require_once('includes/slider.php') ?></div>
+	<?php require_once('includes/video-carousel.php') ?>
     <div class="video-slider"><?php require_once 'includes/video.php'; ?></div>
+
+
     <?php require_once('includes/footer.php') ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	
-    
     <script type="text/javascript" src="js/slider-data.js"></script>
-    
     
 </body>
 </html>

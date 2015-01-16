@@ -1,75 +1,40 @@
 var anchor = $('.anchor').position().left;
-var trigger = $('.videos');
-var numbers = 2;
-for(var i = 1; i < 6; i++) {
-    console.log('Item '+ i + ': ' + $('.list-' + i).position().left)
-}
+        var width = $('.videos li').width() + 60;
+        console.log(width);
+        $(".left").click(function() {
+            if($('.videos').scrollLeft() > 0) {
+                $('.videos').animate({
+                    scrollLeft: $('.videos').scrollLeft() - width
+                }, 300);
+                console.log("left");
+            }
+            else if($('.videos').scrollLeft() == 0) {
+                $('.videos').animate({
+                    scrollLeft: anchor
+                }, 300);
+                console.log("left");
+            }
+        });
 
-$('.right').click(function() {
-    $('.videos').animate({
-        scrollLeft: $('.list-' + numbers).position().left - 39
-    }, 300);
-    numbers += 1;
-});
-
-$('.left').click(function() {
-    if(numbers > 0) {
-        numbers -= 1;
-        $('videos').animate({
-            scrollLeft: $('.list-' + numbers).position().left,
-        }, 300);
-
-    }
-    
-})
-
-/*if($(window).width() < 768) {
-    function goLeft() {
-        trigger.animate({
-            scrollLeft: '-=75'
-        },100, goLeft);
-    }
-
-    function goRight() {
-        trigger.animate({
-            scrollLeft: '+=75'
-        },100, goRight);
-    }
-
-    $(".left").mousedown(goLeft).mouseup(stopScroll);
-    $(".right").mousedown(goRight).mouseup(stopScroll);
-}
-if($(window).width() > 768) {
-    function goLeft() {
-        trigger.animate({
-            scrollLeft: '-=150'
-        },100, goLeft);
-    }
-
-    function goRight() {
-        trigger.animate({
-            scrollLeft: '+=150'
-        },100, goRight);
-    }
-
-    $(".left").mousedown(goLeft).mouseup(stopScroll);
-    $(".right").mousedown(goRight).mouseup(stopScroll);
-}
-
-function stopScroll() {
-    trigger.stop();
-}*/
+        $(".right").click(function() {
+            {
+                $('.videos').animate({
+                    scrollLeft: $('.videos').scrollLeft() + width
+                }, 300);
+                console.log("right");
+            }
+        });
 
 
 
-if($(window).width() < 769) {
+/*if($(window).width() < 769) {
     $('video').removeAttr('disabled');
     $('video').attr('controls', 'controls');
     $('.overlay').css('display', 'none');
 }
-else {
-    $('video').attr('disabled', 'disabled');
-    $('video').removeAttr('controls');
+else {*/
+    $('.video-cont video').attr('disabled', 'disabled');
+    $('.video-cont video').removeAttr('controls');
     $('.overlay').css('display', 'block');
 
     $(".video-cont video").click(function() {
@@ -87,4 +52,4 @@ else {
             $("#myModal .modal-body").html('');
         });
     });
-}
+/*}*/

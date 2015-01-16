@@ -17,6 +17,8 @@
         	</div><!-- /.modal-content -->
       	</div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+    
     
     <div class="video-slider">
 		<span class="left"><img src="img/Arrow_Right_Filled.svg"></span>

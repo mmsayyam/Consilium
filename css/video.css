@@ -1,6 +1,7 @@
 .video-slider {
 	position: relative;
 	margin-left: -10px;
+	margin-bottom: 3em;
 }
 .video-slider ul {
 	width: 100%;
@@ -8,6 +9,7 @@
 	white-space: nowrap;
 	overflow: auto;
 	overflow-x: hidden;
+	padding-left: 0px;
 }
 /*@media screen and (min-width: 661px) {
 	.video-slider li {
@@ -26,7 +28,8 @@
 }
 .video-slider li {
 	display: inline-block;
-	margin-right: 4em;
+	margin-right: 2em;
+	margin-left: 2em;
 }
 
 .video-slider video {
@@ -108,6 +111,9 @@
 	font-size: 28px;
 }
 @media screen and (max-width: 768px) {
+	.video-slider {
+		display: none;
+	}
 	.video-slider li {
 		width: 95%;
 	}
