@@ -36,7 +36,7 @@
 		</a>
 		<a class="right carousel-control" href="#video-carousel" role="button" data-slide="next">
 		    <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-		    <span style="float:right" class="right-arrow"><img src="img/Arrow_Right_Filled.svg"></span>
+		    <span class="right-arrow"><img src="img/Arrow_Right_Filled.svg"></span>
 		    <span class="sr-only">Next</span>
 		</a>
 	</div>

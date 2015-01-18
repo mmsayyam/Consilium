@@ -14,15 +14,15 @@
             <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-2">
                 <h3 class="text-left connect-head">GET IN TOUCH</h3>
                 <ul class="connect-links">
-                    <li><a href=""><img class="fb connect" src="img/facebook.svg"></a></li>
-                    <li><a href=""><img class="tt connect" src="img/twitter.svg"></a></li>
-                    <li><a href=""><img class="tm connect" src="img/google.svg"></a></li>
-                    <li><a href=""><img class="tm connect" src="img/email.svg"></a></li>
+                    <li><a href=""><img class="connect" src="img/facebook.svg"></a></li>
+                    <li><a href=""><img class="connect" src="img/twitter.svg"></a></li>
+                    <li><a href=""><img class="connect" src="img/google.svg"></a></li>
+                    <li><a href=""><img class="connect" src="img/email.svg"></a></li>
                 </ul>
             </div>
             
         </div>
-        <div>
+        <div class="row">
             <ul class="text-center" style="padding-left: 0px;">
                 <li><a href="member-login.php">©2014 Consilium Corporation</a></li>
                 <li><a href="">Terms and Conditions</a></li>

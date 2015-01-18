@@ -13,9 +13,12 @@ video {
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
 	top: 45%;
 }
+.carousel-control {
+	position: initial;
+}
 .left-arrow, .right-arrow {
-    position: absolute;
-    margin-left: -2.5em;
+    position: absolute;/*
+    margin-left: -2.5em;*/
     height: 23%;
     top: 34%;
 }
@@ -26,4 +29,7 @@ video {
 }
 .left-arrow img, .right-arrow img {
 	height: 100%;
+}
+.right-arrow {
+	right: 0px;
 }
