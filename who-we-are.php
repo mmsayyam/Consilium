@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
 
 </head>
-<body class="who-we-are-body">
+<body class="wwa-body">
 	<?php require_once('includes/header.php') ?>
 	<div class="container">
 		<h1>Who We Are</h1>

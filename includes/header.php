@@ -15,7 +15,7 @@
 				<li class="wwb-nav"><a href="who-will-benefit.php">Who will benefit</a></li>
 				<li class="offering-nav"><a href="offerings.php">Our offerings</a></li>
 				<li class="features-nav"><a href="features-videos.php">Features & Videos</a></li>
-				<li><a href="who-we-are.php">Who we are</a></li>
+				<li class="wwa-nav"><a href="who-we-are.php">Who we are</a></li>
 				<li class="contact-us-nav"><a href="contact.php">Contact us</a></li>
 			</ul>
 			<!-- <ul class="nav navbar-nav navbar-right">
