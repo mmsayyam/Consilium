@@ -34,12 +34,11 @@ CKEDITOR.stylesSet.add( 'default', [
 	{ name: 'Italic Title',		element: 'h2', styles: { 'font-style': 'italic' } },
 	{ name: 'Subtitle',			element: 'h3', styles: { 'color': '#aaa', 'font-style': 'italic' } },
 	{
-		name: 'Special Container',
-		element: 'div',
+		name: 'Special Header',
+		element: 'p',
 		styles: {
-			padding: '5px 10px',
-			background: '#eee',
-			border: '1px solid #ccc'
+			padding: '5px 40px',
+			'background-color': 'rgba(234, 234, 234, 0.46)'
 		}
 	},
 
@@ -49,9 +48,9 @@ CKEDITOR.stylesSet.add( 'default', [
 	// some of them in the Styles combo, removing them from the toolbar.
 	// (This requires the "stylescombo" plugin)
 	/*
-	{ name: 'Strong',			element: 'strong', overrides: 'b' },
+	{ name: 'Strong',			element: 'strong', overrides: 'b' },*/
 	{ name: 'Emphasis',			element: 'em'	, overrides: 'i' },
-	{ name: 'Underline',		element: 'u' },
+	/*{ name: 'Underline',		element: 'u' },
 	{ name: 'Strikethrough',	element: 'strike' },
 	{ name: 'Subscript',		element: 'sub' },
 	{ name: 'Superscript',		element: 'sup' },

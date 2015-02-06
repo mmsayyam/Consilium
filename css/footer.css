@@ -36,6 +36,20 @@ footer ul {
 	text-align: left;
 	margin-left: 2.3em;
 }
+.table, .table-small {
+	display: none;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	border-top: none;
+	padding-left: 40px;
+	font-size: 18px;
+}
+.table-small td{
+	padding: 8px;
+	border-top: none;
+	padding-left: 40px;
+	font-size: 18px;
+}
 footer ul li {
 	display: inline-block;
 	font-size: 1.3em;
@@ -62,26 +76,7 @@ footer ul.text-center li {
 	margin-right: 1.8em;
 	margin-left: 1.5em;
 }
-@media screen and (max-width: 1205px) {
-	.connect-links li {
-		margin-left: 2.1em;
-	}
-}
-@media screen and (max-width: 1150px) {
-	.connect-links li {
-		margin-left: 2.1em;
-		margin-right: -7px;
-	}
-}
-@media screen and (max-width: 1070px) {
-	.connect-links li {
-		margin-left: 1.7em;
-	}
-	.connect-head {
-		margin-left: 75px;
-	}
-}
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
 	.connect-head {
 		margin-left: 38px;
 	}
@@ -90,6 +85,42 @@ footer ul.text-center li {
 		margin-right: 2.1em;
 	}
 }
+@media screen and (max-width: 1200px) {
+	.related-links li {
+		margin-right: 4.4em;
+	}
+}
+@media screen and (max-width: 694px) {
+	.related-articles {
+		display: none;
+	}
+	.table {
+		display: block;
+	}
+}
+@media screen and (max-width: 447px) {
+	.table {
+		display: none;
+	}
+	.table-small {
+		display: block;
+	}
+}
+/*@media screen and (max-width: 699px) {
+	.oo {
+		margin-left: 24px;
+	}
+}
+@media screen and (max-width: 431px) {
+	.wwb {
+		margin-left: 44px;
+	}
+}
+@media screen and (max-width: 352px) {
+	.wwb {
+		margin-left: 0px;
+	}
+}*/
 @media screen and (max-width: 360px) {
 	.connect {
 		margin-right: 0px;

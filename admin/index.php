@@ -15,14 +15,21 @@
 		<h3 class="text-center">
 			<a href="admin-users.php">Users</a>
 		</h3>
+		
 		<h3 class="text-center">
-			<a href="write-article.php">Articles</a>
+			<a href="change-wwd.php">What we do</a>
 		</h3>
 		<h3 class="text-center">
-			<a href="insert-gallery.php">Gallery</a>
+			<a href="change-wwb.php">Who will benefit</a>
 		</h3>
 		<h3 class="text-center">
-			<a href="change-wwd.php">Change Content of "What We Do"</a>
+			<a href="change-offering.php">Our Offerings</a>
+		</h3>
+		<h3 class="text-center">
+			<a href="insert-gallery.php">Features and Videos</a>
+		</h3>
+		<h3 class="text-center">
+			<a href="change-wwa.php">Who we are</a>
 		</h3>
 	</div>
 

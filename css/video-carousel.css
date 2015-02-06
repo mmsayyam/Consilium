@@ -33,3 +33,16 @@ video {
 .right-arrow {
 	right: 0px;
 }
+.video-carousel .carousel-indicators li {
+	border: 1px solid #414141;
+}
+.video-carousel .carousel-indicators {
+	margin-bottom: -34px;
+}
+.video-carousel .carousel-indicators .active {
+	background-color: #414141;
+	margin-bottom: 1px;
+}
+.video-carousel {
+	padding-bottom: 2em;
+}

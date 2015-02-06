@@ -21,7 +21,7 @@
 			$_SESSION['username'] = $_POST['username'];
 			$_SESSION['access'] = $record['access'];
 			if ($record['access'] == 'admin') {
-				header("Location: admin/admin-panel.php");
+				header("Location: admin/index.php");
 			}
 			elseif ($record['access'] == 'user') {
 				header("Location: user-panel.php");
@@ -32,8 +32,6 @@
 			$message = "Wrong Username or Password";
 		}
 	}
-	
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,6 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<title>Member Login</title>
 </head>
 <body>

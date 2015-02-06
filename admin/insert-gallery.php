@@ -40,7 +40,7 @@
 			}
 		}
 		else {
-			$message = "Image size is too large. Max limit is 50MB";
+			$message = "Video size is too large. Max limit is 50MB";
 		}
 	}
 	if(isset($_POST['totem-that'])) {
@@ -53,7 +53,7 @@
 		$type = $_FILES['image']['type'];
 		$tmp = $_FILES['image']['tmp_name'];
 		$g_type = "article";
-		if($size < 52500000) {
+		if($size < 50 * 1024 * 1024) {
 			if($image != "") {
 				if(in_array($extension, $valid_types)) {
 					$target = '../gallery/images/'.$image;
@@ -79,7 +79,7 @@
 			}
 		}
 		else {
-			$message = "Image size is too large. Max limit is 50MB";
+			$message = "Image size is too large. Max limit is 5MB";
 		}
 	}
  ?>

@@ -11,7 +11,7 @@
 	  	<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<?php for($m = 0; $m < $row_num; $m++){ ?>
-		    <li data-target="#video-carousel" data-slide-to="<?php echo $m ?>" <?php if($m==0){ ?> class="active"> <?php } ?></li>
+		    <li data-target="#video-carousel" data-slide-to="<?php echo $m ?>" <?php if($m==0){ ?> class="active" style="margin-right: -1px;"> <?php } ?></li>
 		    <?php } ?>
 		</ol>
 

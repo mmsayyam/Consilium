@@ -1,26 +1,10 @@
 <?php 
  	require_once 'check_admin.php';
  	$message = "";
- 	$acc_message = '';
- 	require_once'../connections/connection.php';
-
-
- 	if (isset($_POST['acc_submit'])) {
- 		$heading = $_POST['heading'];
- 		$content = $_POST['acc_content'];
- 		$query = "INSERT INTO offering_accordion VALUES ('','{$heading}', '{$content}')";
- 		if($result = mysqli_query($con, $query)) {
- 			header('change-offering.php');
- 			$acc_message = "Entered";
- 		}
- 		else {
- 			$acc_message = "Error Occured";
- 			echo mysqli_error($con);
- 		}
- 	}
  	if (isset($_POST['submit'])) {
+ 		require_once '../connections/connection.php';
 
- 		$query = "SELECT * FROM offering";
+ 		$query = "SELECT * FROM wwb";
 	 	$result = mysqli_query($con, $query);
 	 	$record = mysqli_fetch_array($result);
 	 	$row_count = mysqli_num_rows($result);
@@ -28,9 +12,9 @@
 	 	if($row_count > 0) {
 	 		$content = $_POST['content'];
 	 		$content = str_replace("'", "\'", $content);
-	 		$query = "UPDATE offering SET content= '$content' WHERE offering_id = 2";
+	 		$query = "UPDATE wwb SET content= '$content' WHERE wwb_id = 1";
 	 		if($result = mysqli_query($con, $query)) {
-	 			header("change-offering.php");
+	 			header("change-wwb.php");
 	 			$message = "Updated";
 	 		}
 	 		else {
@@ -41,9 +25,9 @@
 	 	else {
 	 		$content = $_POST['content'];
 	 		$content = str_replace("'", "\'", $content);
-	 		$query = "INSERT INTO offering VALUES ('', '{$content}')";
+	 		$query = "INSERT INTO wwb VALUES ('', '{$content}')";
 	 		if($result = mysqli_query($con, $query)) {
-	 			header("change-offering.php");
+	 			header("change-wwb.php");
 	 			$message = "Entered";
 	 		}
 	 		else {
@@ -52,10 +36,6 @@
 	 		}
 	 	}
  	}
-
- 	$acc_query = "SELECT * FROM offering_accordion";
-	$acc_result = mysqli_query($con, $acc_query);
-	$acc_record = mysqli_fetch_array($acc_result);
  ?>
 <!DOCTYPE html>
 <html>
@@ -94,7 +74,7 @@
 					// Remove unnecessary plugins to make the editor simpler.
 					editor.config.removePlugins = 'colorbutton,find,flash,font,' +
 						'forms,iframe,image,newpage,removeformat,' +
-						'smiley,specialchar,stylescombo,templates,source';
+						'smiley,specialchar,stylescombo,templates';
 
 					// Rearrange the layout of the toolbar.
 					editor.config.toolbarGroups = [
@@ -114,11 +94,11 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<h1 class="text-center">Modify "Offering" Content</h1>
+				<h1 class="text-center">Change "What We Do" Content</h1>
 				<h3>
 					<?php echo $message ?>
 				</h3>
-				<form class="form" method="post" action="change-offering.php" name="change-offering">
+				<form class="form" method="post" action="change-wwb.php" name="change-wwb">
 					<div class="form-group">
 						<label for="content">Write Here</label>
 						<textarea rows="10" class="form-control" name="content" id="content"></textarea>
@@ -131,44 +111,6 @@
 						<input type="submit" value="Submit" name="submit">
 					</div>
 				</form>
-
-				<h3>
-					<?php echo $acc_message ?>
-				</h3>
-				<h1 class="text-center">Add New Accordion Content</h1>
-				<form class="form" method="post" action="change-offering.php" name="change-accordion">
-					<div class="form-group">
-						<label for="heading">Heading</label>
-						<input type="text" class="form-control" name="heading" id="heading">
-					</div>
-					<div class="form-group">
-						<label for="acc_content">Content</label>
-						<textarea rows="10" class="form-control" name="acc_content" id="acc_content"></textarea>
-						<script type="text/javascript">
-						CKEDITOR.replace('acc_content');
-						</script>
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Submit" name="acc_submit">
-					</div>
-				</form>
-				<h1 class="text-center">Modify Accordion Content</h1>
-				<table class="table table-striped">
-					<tr class="text-center">
-						<th>No.</th>
-						<th>Heading</th>
-						<th colspan="2">Actions</th>
-					</tr>
-					<?php $j=0; do { $j++ ?>
-						<tr>
-							<td><?php echo $j ?></td>
-							<td><?php echo $acc_record['oc_heading']; ?></td>
-							<td><a href="off-actions/off-update.php?uid=<?php echo $acc_record['oc_id'] ?>"> Update</a></td>
-							<td><a href="off-actions/off-delete.php?did=<?php echo $acc_record['oc_id'] ?>"> Delete</a></td>
-						</tr>
-					<?php } while ( $acc_record = mysqli_fetch_array($acc_result)); ?>
-					
-				</table>
 			</div>
 		</div>
 		
