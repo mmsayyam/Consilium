@@ -1,5 +1,5 @@
 var anchor = $('.anchor').position().left;
-        var width = $('.videos li').width() + 60;
+        var width = $('.videos li').width() + 46;
         console.log(width);
         $(".left").click(function() {
             if($('.videos').scrollLeft() > 0) {
