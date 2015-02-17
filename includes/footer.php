@@ -5,40 +5,49 @@
                 <h3 class="text-left">RELATED ARTICLES</h3>
                 <div class="related-articles">
                     <ul class="related-links">
-                        <li><a href="">What we do</a></li>
-                        <li><a href="">Our Offerings</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Who will benefit</a></li>
-                        <li><a href="">Features & Videos</a></li>  
+                        <li><a href="what-we-do.php">What we do</a></li>
+                        <li><a href="offerings.php">Our Offerings</a></li>
+                        <li><a href="who-we-are.php">What we are</a></li>
+                        <li><a href="who-will-benefit.php">Who will benefit</a></li>
+                        <li><a href="features-videos.php">Features & Videos</a></li>  
                     </ul>
                 </div>
                 
                 
                 <table class="table text-left">
                     <tr>
-                        <td><a href="">What we do</a></td>
-                        <td><a href="">Our Offerings</a></td>
-                        <td><a href="">About us</a></td>
+                        <td><a href="what-we-do.php">What we do</a></td>
+                        <td><a href="offerings.php">Our Offerings</a></td>
+                        <td><a href="who-we-are.php">What we are</a></td>
                     </tr>
                     <tr>
-                        <td><a href="">Who will benefit</a></td>
-                        <td><a href="">Features & Videos</a></td>
+                        <td><a href="who-will-benefit.php">Who will benefit</a></td>
+                        <td><a href="features-videos.php">Features & Videos</a></td>
                     </tr>
                 </table>
                 
                 <table class="table-small text-left">
                     <tr>
-                        <td><a href="">What we do</a></td>
-                        <td><a href="">Our Offerings</a></td>
+                        <td><a href="what-we-do.php">What we do</a></td>
+                        <td><a href="offerings.php">Our Offerings</a></td>
                     </tr>
                     <tr>
-                        <td><a href="">Who will benefit</a></td>
-                        <td><a href="">Features & Videos</a></td>
+                        <td><a href="who-will-benefit.php">Who will benefit</a></td>
+                        <td><a href="features-videos.php">Features & Videos</a></td>
                     </tr>
                     <tr>
-                        <td><a href="">About us</a></td>
+                        <td><a href="who-we-are.php">What we are</a></td>
                     </tr>
                 </table>
+                <div class="col-xs-12 small-links">
+                    <ul>
+                        <li><a href="what-we-do.php">What we do</a></li>
+                        <li><a href="offerings.php">Our Offerings</a></li>
+                        <li><a href="who-will-benefit.php">Who will benefit</a></li>
+                        <li><a href="features-videos.php">Features & Videos</a></li>
+                        <li><a href="who-we-are.php">What we are</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-lg-4 col-lg-offset-1">
                 <h3 class="text-left connect-head">GET IN TOUCH</h3>

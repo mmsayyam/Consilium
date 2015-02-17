@@ -76,6 +76,13 @@ footer ul.text-center li {
 	margin-right: 1.8em;
 	margin-left: 1.5em;
 }
+.small-links {
+	display: none;
+}
+.small-links li {
+	display: block;
+	margin-left: -16px;
+}
 @media screen and (max-width: 1200px) {
 	.connect-head {
 		margin-left: 38px;
@@ -124,5 +131,13 @@ footer ul.text-center li {
 @media screen and (max-width: 360px) {
 	.connect {
 		margin-right: 0px;
+	}
+}
+@media screen and (max-width: 325px) {
+	.small-links {
+		display: block;
+	}
+	.table-small {
+		display: none;
 	}
 }
