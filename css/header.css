@@ -1,5 +1,5 @@
 .navbar {
-	font-size: 17px;
+	font-size: 20px;
 	border-radius: 0px;
 	margin-bottom: 0px;
 	border: none;
@@ -32,7 +32,7 @@
 .navbar-inverse .navbar-header > a:hover {
 	opacity: 1;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1034px) {
 	.navbar {
 		font-size: 16px;
 	}
