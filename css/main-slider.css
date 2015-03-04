@@ -51,10 +51,11 @@
 	display: block;
 }
 .carousel-caption {
-	top: 25%;
+	top: 22%;
 }
 .carousel-caption h3 {
-	font-size: 34px;
+	font-size: 46px;
+	line-height: 62px;
 }
 .main-slider-line-1 {
 	margin-left: -10em;
@@ -62,12 +63,22 @@
 .main-slider-line-2 {
 	margin-left: 10em;
 }
+@media screen and (max-width: 802px){
+	.carousel-caption h3 {
+		font-size: 42px;
+		line-height: 60px;
+	}
+	.carousel-caption {
+		top: 18%;
+	}
+}
 @media screen and (max-width: 640px) {
 	.carousel-caption {
-		top: 25%;
+		top: 18%;
 	}
 	.carousel-caption h3 {
-		font-size: 2em;
+		font-size: 34em;
+		line-height: 44px;
 	}
 	.carousel-indicators li {
 		width: 15px;
@@ -81,11 +92,5 @@
 @media screen and (max-width: 450px) {
 	.carousel-caption {
 		top: 15%;
-	}
-	.main-slider-line-1 {
-		margin-left: -3em;
-	}
-	.main-slider-line-2 {
-		margin-left: 3em;
 	}
 }
