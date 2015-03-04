@@ -1,12 +1,16 @@
 .navbar {
-	font-size: 25px;
+	font-size: 17px;
 	border-radius: 0px;
 	margin-bottom: 0px;
 	border: none;
 	background-color: #414141;
 	box-shadow: 0px 2px 5px #000000;
 	z-index: 200;
-	height: 100px;
+	height: 86px;
+
+}
+.nav > li > a {
+	padding: 10px 10px;
 }
 .navbar-inverse .navbar-collapse {
 	border-top: none;
@@ -15,8 +19,8 @@
 }
 .navbar-inverse .navbar-nav > li > a{
 	color: #FFFFFF;
-	height: 100px;
-	padding-top: 36px;
+	height: 86px;
+	padding-top: 32px;
 }
 .navbar-inverse .navbar-brand {
 	padding-top: 5px;
@@ -30,18 +34,26 @@
 }
 @media screen and (max-width: 1000px) {
 	.navbar {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
-@media screen and (max-width: 900px) {
-	.navbar {
-		font-size: 15px;
-	}
+@media screen and (max-width: 920px) {
+	
 	#collapsable-nav a {
 	background-color: #414141;
 	}
 	#collapsable-nav a:hover {
 		background-color: #353535;
+	}
+}
+@media screen and (max-width: 858px) {
+	.navbar {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 796px) {
+	.navbar {
+		font-size: 13px;
 	}
 }
 nav > a:hover {

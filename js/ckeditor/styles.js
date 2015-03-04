@@ -38,7 +38,7 @@ CKEDITOR.stylesSet.add( 'default', [
 		element: 'p',
 		styles: {
 			padding: '5px 40px',
-			'background-color': 'rgba(234, 234, 234, 0.46)'
+			'background-color': 'rgba(234, 234, 234, 1)'
 		}
 	},
 
