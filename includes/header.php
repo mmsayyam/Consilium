@@ -8,10 +8,10 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="index.php">
-				<!-- <img style="width: auto; height: 84px;" src="img/Consilium.svg"> -->
-				<object type="image/svg+xml" data="img/Consilium.svg" style="width: auto; height: 86px; padding-top: -2px;">
+				<img style="width: auto; height: 84px;" src="img/Consilium.svg">
+				<!-- <object type="image/svg+xml" data="img/Consilium.svg" style="width: auto; height: 86px; padding-top: -2px;">
 					
-				</object>
+				</object> -->
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsable-nav">
