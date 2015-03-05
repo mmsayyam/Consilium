@@ -21,7 +21,7 @@
 <body class="what-we-do-body">
 	<?php require_once('includes/header.php') ?>
 	<div class="container">
-		<img class="wwd-img img-responsive" src="img/what-we-do.jpg">
+		<!-- <img class="wwd-img img-responsive" src="img/what-we-do.jpg"> -->
 		<h1>What We Do</h1>
 		<?php echo $record['content'] ?>
 
