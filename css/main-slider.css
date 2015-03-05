@@ -52,6 +52,8 @@
 }
 .carousel-caption {
 	top: 22%;
+	left: 12%;
+	right: 12%;
 }
 .carousel-caption h3 {
 	font-size: 46px;
