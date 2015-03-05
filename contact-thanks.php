@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-	<title>Consultancy - Contact</title>
+	<title>Consilium - Contact</title>
 	<meta http-equiv="refresh" content="3;URL=index.php">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     

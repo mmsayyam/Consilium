@@ -42,7 +42,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-	<title>Consultancy - Contact Us</title>
+	<title>Consilium - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">

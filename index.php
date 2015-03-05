@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-	<title>Consultancy</title>
+	<title>Consilium</title>
     <link rel="shortcut icon" href="img/Consilium.svg">
     <link rel="stylesheet" type="text/css" href="css/slider.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
