@@ -35,12 +35,12 @@
 .navbar-inverse .navbar-header > a:hover {
 	opacity: 1;
 }
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1074px) {
 	.navbar {
 		font-size: 16px;
 	}
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 960px) {
 	
 	#collapsable-nav a {
 	background-color: #414141;
@@ -49,12 +49,12 @@
 		background-color: #353535;
 	}
 }
-@media screen and (max-width: 858px) {
+@media screen and (max-width: 918px) {
 	.navbar {
 		font-size: 14px;
 	}
 }
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 856px) {
 	.navbar {
 		font-size: 13px;
 	}
@@ -68,7 +68,7 @@ nav > a:hover {
 	vertical-align: middle;
 	opacity: 1;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 817px) {
 	#collapsable-nav {
 		padding-top: 1em;
 	}
