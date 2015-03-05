@@ -11,6 +11,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/Consilium.svg">
 	<title>Consilium - Who will benefit</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
