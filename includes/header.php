@@ -9,7 +9,7 @@
 			</button>
 			<a class="navbar-brand" href="index.php">
 				<!-- <img style="width: auto; height: 84px;" src="img/Consilium.svg"> -->
-				<object type="image/svg+xml" data="img/Consilium.svg" style="width: auto; height: 96px; padding-top: -2px;">
+				<object type="image/svg+xml" data="img/Consilium.svg" style="width: auto; height: 86px; padding-top: -2px;">
 					
 				</object>
 			</a>
