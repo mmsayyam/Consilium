@@ -40,7 +40,7 @@
 		        		</a>
 		      		</h4>
 		    	</div>
-			    <div id="collapse<?php echo $i ?>" class="panel-collapse collapse<?php if($i==1){ ?> in <?php } ?> " role="tabpanel" aria-labelledby="headingOne">
+			    <div id="collapse<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 			      	<div class="panel-body">
 			        	<?php echo $acc_record['oc_content']; ?>
 			      	</div>
