@@ -1,4 +1,4 @@
-<?php 
+<?php
  	require_once 'connections/connection.php';
 
  	$query = "SELECT * FROM wwa";
@@ -25,10 +25,10 @@
 		<h1>Who We Are</h1>
 		<?php echo $record['content'] ?>
 		<div>
-		<img class="img-responsive" src="gallery/images/<?php echo $record['img'] ?>" style="float:right; width: 340px; height: auto; margin-top: 4px; margin-bottom: 14px; margin-left: 16px">
-		<?php echo $record['ceo'] ?>	
+		<img class="img-responsive img-rounded" src="gallery/images/<?php echo $record['img'] ?>" style="float:right; width: 340px; height: auto; margin-top: 4px; margin-bottom: 14px; margin-left: 16px">
+		<?php echo $record['ceo'] ?>
 		</div>
-		
+
 
 	</div>
 	<?php require_once 'includes/footer.php'; ?>
