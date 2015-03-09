@@ -1,8 +1,17 @@
-<?php 
+<?php
  	require_once 'check_admin.php';
+   require_once '../connections/connection.php';
+   $query = "SELECT * FROM wwd WHERE wwd_id = 6";
+   $result = mysqli_query($con, $query);
+   $previous;
+   if(mysqli_num_rows($result) > 0) {
+      $previous = mysqli_fetch_array($result);
+   } else {
+      $previous = "";
+   }
  	$message = "";
  	if (isset($_POST['submit'])) {
- 		require_once '../connections/connection.php';
+
 
  		$query = "SELECT * FROM wwd";
 	 	$result = mysqli_query($con, $query);
@@ -48,7 +57,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	
+
 	<script src="../js/ckeditor/ckeditor.js"></script>
 	<script>
 
@@ -101,7 +110,7 @@
 				<form class="form" method="post" action="change-wwd.php" name="change-wwd">
 					<div class="form-group">
 						<label for="content">Write Here</label>
-						<textarea rows="10" class="form-control" name="content" id="content"></textarea>
+						<textarea rows="10" class="form-control" name="content" id="content"><?php echo $previous['content'] ?></textarea>
 						<script type="text/javascript">
 						CKEDITOR.replace( 'content' );
 						</script>
@@ -113,19 +122,19 @@
 				</form>
 			</div>
 		</div>
-		
+
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<!--<script type="text/javascript" src="js/jquery-te-1.4.0.min.js" charset="utf-8"></script> 
+	<!--<script type="text/javascript" src="js/jquery-te-1.4.0.min.js" charset="utf-8"></script>
 
 	<script>
 		$('.jqte-text').jqte();
-		
+
 		// settings of status
 		var jqteStatus = true;
 	</script>
 	-->
-	
+
 </body>
 </html>
