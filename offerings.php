@@ -35,7 +35,7 @@
 			<div class="panel panel-default">
 		    	<div class="panel-heading" role="tab" id="headingOne">
 		      		<h4 class="panel-title">
-		        		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" <?php if($i == 3){ ?> aria-expanded="true" <?php } else{ ?> class="collapsed" aria-expanded="false" <?php } ?> aria-controls="collapse<?php echo $i ?>">
+		        		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-controls="collapse<?php echo $i ?>">
 		          			<?php echo $acc_record['oc_heading']; ?>
 		        		</a>
 		      		</h4>
