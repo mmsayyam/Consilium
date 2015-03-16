@@ -90,3 +90,6 @@ a:hover {
 .cke_button__source {
 	display: none;
 }
+body {
+	background-color: #ecf0f1;
+}

@@ -99,7 +99,7 @@ p {
 	height: 50px;
 	background-color: #414141;
 	position: absolute;
-	bottom: 6px;
+	bottom: 5px;
 	left: 19px;
 	-webkit-transition-duration: 0.4s;
   	-moz-transition-duration: 0.4s;
@@ -117,8 +117,11 @@ p {
 	margin-right: auto;
 	display: block;
 	margin-bottom: 2em;
-	background-color: #FFFFFF;
+	background-color: #ecf0f1;
 	font-size: 24px;
+}
+.btn-load-more:hover {
+	background-color: #E6E6EC;
 }
 .modal-footer {
 	text-align: left;
@@ -234,6 +237,7 @@ h4:hover {
 }
 .thumbnail {
 	border: none;
+	background-color: rgba(0,0,0,0);
 }
 @media (max-width: 560px) {
 	.g_object {
@@ -320,9 +324,6 @@ h4:hover {
 	.img_object {
 		margin-left: 2%;
 	}
-}
-.thumbnail {
-	border: none;
 }
 .gallery a:hover {
 	opacity: 1;
