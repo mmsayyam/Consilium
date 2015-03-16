@@ -10,7 +10,11 @@ h2 {
 	color: #000000;
 }
 .panel-default > .panel-heading {
-	background-color: #D2D7D3;
+	background-color: #414141;
+	color: #FFF;
+}
+.panel-default > .panel-heading a:hover {
+	color: #ddd;
 }
 .panel-title {
 	font-size: 18px;

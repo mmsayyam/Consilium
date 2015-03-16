@@ -38,7 +38,7 @@ CKEDITOR.stylesSet.add( 'default', [
 		element: 'p',
 		styles: {
 			padding: '5px 40px',
-			'background-color': 'rgba(234, 234, 234, 1)'
+			'background-color': 'rgba(210, 215, 211, 1)'
 		}
 	},
 
@@ -107,4 +107,3 @@ CKEDITOR.stylesSet.add( 'default', [
 	{ name: 'Borderless Table',		element: 'table',	styles: { 'border-style': 'hidden', 'background-color': '#E6E6FA' } },
 	{ name: 'Square Bulleted List',	element: 'ul',		styles: { 'list-style-type': 'square' } }
 ] );
-
