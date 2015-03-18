@@ -5,7 +5,7 @@
 		$get_total_rows = mysqli_fetch_array($results);
 		$items_per_group = 8;
 		$total_pages = ceil($get_total_rows[0]/$items_per_group);
-		
+
 	?>
 <!DOCTYPE html>
 <html>
@@ -21,35 +21,35 @@
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
-	
+
 	<link rel="stylesheet" type="text/css" href="css/features-videos.css">
 	<script type="text/javascript">
     	$(document).ready(function() {
 		    var track_click = 0; //total loaded record group(s)
-		    
+
 		    var total_pages = <?php echo $total_pages; ?>
-		   
+
 		    $('#gallery').load("includes/autoload_process.php", {'group_no':track_click}, function() {track_click++;}); //load first group
-		   	
+
 		    $('.load_more').click(function (e) {
-		       
+
 		        $(this).hide();
 		        $('.animation_image').show(); //show loading image
-		           
+
 		            if(track_click <= total_pages) //there's more data to load
-		            {  
+		            {
 		                //load data from the server using a HTTP POST request
 		                $.post('includes/autoload_process.php',{'group_no': track_click}, function(data){
-		                    
+
 		                    $('.load_more').show();
 		                    $('.animation_image').hide(); //hide loading image once data is received
 		                    $("#gallery").append(data); //append received data into the element
 		                    //hide loading image
 
 		                    track_click++; //loaded group increment
-		               	
+
 		                }).fail(function(xhr, ajaxOptions, thrownError) { //any errors?
-		                   
+
 		                    alert(thrownError); //alert with HTTP error
 		                    $('.load_more').show();
 		                    $('.animation_image').hide(); //hide loading image
@@ -94,7 +94,7 @@
 			<div class="no-more text-center" style="display:none">
 				<h3>No more content to load.</h3>
 			</div>
-			
+
 		</div>
 	</div>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>

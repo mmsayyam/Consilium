@@ -199,6 +199,46 @@ h4:hover {
 @media (max-width: 768px) {
 	.gallery li video {
 		max-height: 220px;
+		width: 296px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.overlay {
+		max-height: 220px;
+		width: 296px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.g_object {
+		max-height: 220px;
+		width: 287px;
+		margin-left: 3.5%;
+		margin-right: auto;
+		display: block;
+	}
+	.img_object {
+		max-height: 220px;
+		width: 296px;
+		margin-left: 3%;
+		margin-right: auto;
+		display: block;
+	}
+	.img-overlay {
+		max-width: 296px;
+		width: 258px;
+		bottom: 23px;
+	}
+	.gallery li {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 660px) {
+	.gallery li video {
+		max-height: 220px;
 		width: 424px;
 		margin-left: auto;
 		margin-right: auto;

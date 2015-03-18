@@ -21,7 +21,7 @@ $items_per_group = 8;
 	    {
 	    	if($row['g_type'] == "video") {
 	    		echo '
-	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 g_object ">
+	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 g_object ">
 	        		<div class="embed-responsive embed-responsive-4by3">
 		        		<video class="embed-responsive-item" disabled>
 							<source src="gallery/videos/'.$row['g_video'].'" type="video/mp4">
@@ -36,7 +36,7 @@ $items_per_group = 8;
 	    	}
 	    	else if($row['g_type'] == 'article') {
 	    		echo '
-	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img_object">
+	        	<li class="col-lg-4 col-md-4 col-sm-6 col-xs-6 img_object">
                     <a href="articles/article.php?article='.$row['g_id'].'">
                     	<img class="img-responsive thumbnail" src="gallery/images/'.$row['g_image'].'"/>
 	                    <div class="img-overlay">
