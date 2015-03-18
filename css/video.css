@@ -35,6 +35,7 @@
 .video-slider video {
 	background-color: #000;
 	cursor: pointer;
+	border: 1px solid #383838;
 }
 .video-slider .modal-dialog {
 	width: 640px;
@@ -139,4 +140,7 @@
 }
 .anchor {
 	width: 10px;
+}
+.embed-responsive .embed-responsive-item {
+	border: 1px solid #383838;
 }

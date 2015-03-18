@@ -141,3 +141,12 @@ footer ul.text-center li {
 		display: none;
 	}
 }
+@media screen and (max-width: 380px) {
+	.related-links-section {
+		display: none;
+	}
+	#extra-links {
+		font-size: 14px;
+		line-height: 32px;
+	}
+}

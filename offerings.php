@@ -33,9 +33,9 @@
 		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 			<?php $i = 0; do{$i++ ?>
 			<div class="panel panel-default">
-		    	<div class="panel-heading" role="tab" id="headingOne">
+		    	<div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-controls="collapse<?php echo $i ?>">
 		      		<h4 class="panel-title">
-		        		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-controls="collapse<?php echo $i ?>">
+		        		<a >
 		          			<?php echo $acc_record['oc_heading']; ?>
 		        		</a>
 		      		</h4>

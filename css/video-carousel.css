@@ -1,5 +1,5 @@
 video {
-	width: 100%;	
+	width: 100%;
 }
 .video-carousel {
 	display: none;
@@ -45,4 +45,7 @@ video {
 }
 .video-carousel {
 	padding-bottom: 2em;
+}
+.video-carousel video {
+	border: 1px solid #383838;
 }
