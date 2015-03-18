@@ -13,8 +13,11 @@ h2 {
 	background-color: #414141;
 	color: #FFF;
 	cursor: pointer;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
+	border-radius: 6px;
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 .panel-default > .panel-heading a:hover {
 	color: #ddd;
@@ -24,4 +27,12 @@ h2 {
 }
 .panel-group .panel {
 	border-radius: 6px;
+}
+.panel-heading-opened {
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	-webkit-transition-duration: 0.4s;
+  	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
