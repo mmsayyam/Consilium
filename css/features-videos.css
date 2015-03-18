@@ -44,6 +44,7 @@ p {
 	max-height: 220px;
 	margin-bottom: 4em;
 	margin-top: 2em;
+	boder: 1px solid #727272;
 }
 .img_object {
 	max-height: 220px;
@@ -94,13 +95,11 @@ p {
 	transition-duration: 0.4s;
 }
 .img-overlay {
-	max-width: 342px;
-	width: 342px;
+	width: 350px;
 	height: 50px;
 	background-color: #414141;
 	position: absolute;
-	bottom: 5px;
-	left: 19px;
+	bottom: 4px;
 	-webkit-transition-duration: 0.4s;
   	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
@@ -173,7 +172,7 @@ h4:hover {
 	}
 	.img-overlay {
 		max-height: 50px;
-		max-width: 276px;
+		width: 283px;
 	}
 }
 @media screen and (max-width: 990px) {
@@ -191,7 +190,7 @@ h4:hover {
 	}
 	.img-overlay {
 		max-height: 50px;
-		max-width: 322px;
+		width: 330px;
 		margin-bottom: -2px;
 	}
 }
@@ -226,8 +225,7 @@ h4:hover {
 		display: block;
 	}
 	.img-overlay {
-		max-width: 296px;
-		width: 258px;
+		width: 266px;
 		bottom: 23px;
 	}
 	.gallery li {
@@ -266,9 +264,8 @@ h4:hover {
 		display: block;
 	}
 	.img-overlay {
-		max-width: 400px;
-		width: 388px;
-		bottom: 27px;
+		width: 396px;
+		bottom: 25px;
 	}
 	.gallery li {
 		margin-top: 10px;
@@ -276,8 +273,10 @@ h4:hover {
 	}
 }
 .thumbnail {
-	border: none;
+	border: 1px solid #727272;
 	background-color: rgba(0,0,0,0);
+	padding: 0px;
+	border-radius: 0px;
 }
 @media (max-width: 560px) {
 	.g_object {
@@ -314,8 +313,7 @@ h4:hover {
 		width: 340px;
 	}
 	.img-overlay {
-		max-width: 302px;
-		width: 302px;
+		width: 310px;
 		bottom: 62px;
 	}
 	.gallery li {
@@ -346,7 +344,7 @@ h4:hover {
 		margin-left: 6%;
 	}
 	.img-overlay {
-		max-width: 242px;
+		width: 250px;
 		bottom: 100px;
 	}
 	.gallery li {
