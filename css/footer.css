@@ -145,7 +145,7 @@ footer ul.text-center li {
 	.related-links-section {
 		display: none;
 	}
-	#extra-links {
+	#extra-links ul li {
 		font-size: 14px;
 		line-height: 32px;
 	}
