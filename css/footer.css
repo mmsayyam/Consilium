@@ -149,4 +149,7 @@ footer ul.text-center li {
 		font-size: 14px;
 		line-height: 32px;
 	}
+	footer ul.text-center {
+			border-top: none;
+	}
 }
