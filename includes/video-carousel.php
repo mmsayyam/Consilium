@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once 'connections/connection.php';
 
 	$query = "SELECT * FROM gallery WHERE g_type = 'video' ORDER BY g_id DESC LIMIT 5";
@@ -7,7 +7,7 @@
 	$row_num = mysqli_num_rows($result);
 ?>
 <div class="video-carousel">
-	<div id="video-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+	<div id="video-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
 	  	<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<?php for($m = 0; $m < $row_num; $m++){ ?>
@@ -18,7 +18,7 @@
 	  	<!-- Wrapper for slides -->
 	  	<div class="carousel-inner" role="listbox">
 	  		<?php $l = 0; do { $l++; ?>
-	  			<div class="item <?php if ($l==1){echo 'active'; } ?>">	
+	  			<div class="item <?php if ($l==1){echo 'active'; } ?>">
 		    		<video class="embed-responsive-item" controls>
 						<source src="gallery/videos/2.mp4">
 						<input type="hidden" value="" id="content">
