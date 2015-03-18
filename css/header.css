@@ -41,9 +41,9 @@
 	}
 }
 @media screen and (max-width: 960px) {
-	
+
 	#collapsable-nav a {
-	background-color: #414141;
+		background-color: #414141;
 	}
 	#collapsable-nav a:hover {
 		background-color: #353535;
@@ -77,6 +77,14 @@ nav > a:hover {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		padding-left: 3em;
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar-inverse .navbar-nav > li > a {
+		height: 60px;
+		padding-top: 26px;
+		padding-bottom: 20px;
+		padding-left: 6px;
 	}
 }
 .navbar-toggle {
