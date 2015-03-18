@@ -1,18 +1,15 @@
 var anchor = $('.anchor').position().left;
         var width = $('.videos li').width() + 46;
-        console.log(width);
         $(".left").click(function() {
             if($('.videos').scrollLeft() > 0) {
                 $('.videos').animate({
                     scrollLeft: $('.videos').scrollLeft() - width
                 }, 300);
-                console.log("left");
             }
             else if($('.videos').scrollLeft() == 0) {
                 $('.videos').animate({
                     scrollLeft: anchor
                 }, 300);
-                console.log("left");
             }
         });
 
@@ -21,7 +18,6 @@ var anchor = $('.anchor').position().left;
                 $('.videos').animate({
                     scrollLeft: $('.videos').scrollLeft() + width
                 }, 300);
-                console.log("right");
             }
         });
 

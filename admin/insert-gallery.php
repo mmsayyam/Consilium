@@ -1,10 +1,10 @@
 <?php require_once 'check_admin.php'; ?>
 <?php require_once '../connections/connection.php'; ?>
-<?php 
+<?php
 	$message="";
 	$date="";
 	if(isset($_POST['totem-this'])) {
-		
+
 		$valid_types = array('mp4','flv','MP4','FLV');
 		$video = $_FILES['video']['name'];
 		if($video != "") {
@@ -98,9 +98,8 @@
 	<script src="../js/ckeditor/ckeditor.js"></script>
 
 	<div class="container">
-	
+
 	<script type="text/javascript">
-	console.log('Message: <?php echo $message; ?>');
 	</script>
 		<form class="form-horizontal">
 			<div class="form-group">
@@ -120,7 +119,7 @@
 		  	</div>
 		</form>
 		<form class="form-horizontal" role="form" enctype="multipart/form-data" action="insert-gallery.php" method="post" name="form-video" id="form-video">
-		  	
+
 		  	<div class="video" style="display:none">
 		  		<div class="form-group">
 			    	<label for="title" class="col-sm-2 control-label">Title</label>
@@ -161,7 +160,7 @@
 					<div class="col-sm-10">
 						<textarea rows="10" class="form-control ckeditor" name="content" id="content"></textarea>
 					</div>
-					
+
 				</div>
 				<div class="form-group">
 			    	<label for="file" class="col-sm-2 control-label">Browse File</label>

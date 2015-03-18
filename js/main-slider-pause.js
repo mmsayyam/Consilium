@@ -2,8 +2,11 @@ $('.carousel').carousel({
    pause: "false"
 });
 $('.carousel-indicators').mouseenter(function() {
-   $('.carousel').carousel('pause');
+   $('#main-slider').carousel('pause');
 });
 $('.carousel-indicators').mouseleave(function() {
-   $('.carousel').carousel('cycle');
+   $('#main-slider').carousel('cycle');
+});
+$('#video-carousel video').click(function() {
+   $('#video-carousel').carousel('pause');
 });

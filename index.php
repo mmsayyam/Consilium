@@ -30,6 +30,5 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slider-data.js"></script>
     <script type="text/javascript" src="js/main-slider-pause.js"></script>
-    <script type="text/javascript" src="js/video-carousel-pause.js"></script>
 </body>
 </html>

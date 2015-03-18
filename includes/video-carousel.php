@@ -7,7 +7,7 @@
 	$row_num = mysqli_num_rows($result);
 ?>
 <div class="video-carousel">
-	<div id="video-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+	<div id="video-carousel" class="carousel slide" data-ride="carousel">
 	  	<!-- Indicators -->
 		<ol class="carousel-indicators">
 			<?php for($m = 0; $m < $row_num; $m++){ ?>
