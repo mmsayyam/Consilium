@@ -19,8 +19,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/second-pages.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/features-videos.css">
 	<script type="text/javascript">

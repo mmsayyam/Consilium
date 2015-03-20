@@ -44,8 +44,8 @@ p {
 	max-height: 220px;
 	margin-bottom: 4em;
 	margin-top: 2em;
-	boder: 1px solid #727272;
 }
+
 .img_object {
 	max-height: 220px;
 	margin-bottom: 4em;
@@ -379,4 +379,7 @@ h4:hover {
 	background-color: rgba(0,0,0,0.7);
 	position: absolute;
 	bottom: 6px;
+}
+.g_object video {
+	border: 1px solid #727272 !important;
 }
