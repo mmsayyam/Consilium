@@ -9,9 +9,6 @@
 			</button>
 			<a class="navbar-brand" href="index.php">
 				<img style="width: auto; height: 84px;" src="img/Consilium.svg">
-				<!-- <object type="image/svg+xml" data="img/Consilium.svg" style="width: auto; height: 86px; padding-top: -2px;">
-					
-				</object> -->
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsable-nav">
@@ -23,18 +20,6 @@
 				<li class="features-nav"><a href="features-videos.php">Features & Videos</a></li>
 				<li class="contact-us-nav"><a href="contact.php">Contact Us</a></li>
 			</ul>
-			<!-- <ul class="nav navbar-nav navbar-right">
-				<?php if( isset( $_SESSION['username'] ) ) { ?>
-
-				<li><a href="admin-panel.php"><?php echo $_SESSION['username'];	 ?></a></li>
-				<li><a href="logout.php">Logout</a></li>
-
-				<?php } else { ?>
-
-				<li class="dropdown"><a href="member-login.php">Members</a></li>
-
-				<?php } ?>
-			</ul> -->
 		</div>
 	</div>
 </nav>

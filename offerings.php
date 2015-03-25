@@ -26,6 +26,17 @@ $acc_record = mysqli_fetch_array($acc_result);
 </head>
 <body class="offering-body">
    <?php require_once('includes/header.php') ?>
+   <?php
+   require_once 'includes/curPageScript.php';
+   if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+      ?>
+      <div id="edit-page" class="pull-right">
+         <a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
+      </div>
+      
+      <?php
+   }
+   ?>
    <div class="container">
       <h1>Our Offerings</h1>
       <?php echo $record['content'] ?>

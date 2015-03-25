@@ -81,14 +81,6 @@ nav > a:hover {
 		padding-left: 3em;
 	}
 }
-@media screen and (max-width: 818px) {
-	.navbar-inverse .navbar-nav > li > a {
-		height: 60px;
-		padding-top: 26px;
-		padding-bottom: 20px;
-		padding-left: 6px;
-	}
-}
 .navbar-toggle {
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -135,4 +127,27 @@ nav > a:hover {
 		padding-left: 0;
 		padding-right: 0;
 	}
+}
+@media screen and (max-width: 768px) {
+	.container-fluid > .navbar-collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.container-fluid > .navbar-header {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+.nav-admin {
+	font-size: 13px;
+	height: 66px;
+	z-index: 199;
+}
+.nav-admin a {
+	height: 66px !important; 
+	padding-top: 20px !important; 
+}
+.nav-admin .navbar-toggle  {
+	margin-top: 17px;
+	margin-bottom: 15px;
 }

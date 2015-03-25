@@ -52,6 +52,18 @@
 </head>
 <body class="contact-us-body">
     <?php require_once('includes/header.php') ?>
+    <?php
+    require_once 'includes/curPageScript.php';
+    if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+        ?>
+        <div id="edit-page" class="pull-right">
+            <a href="admin/index.php">Admin Panel</a>
+        </div>
+        
+        <?php
+    }
+    ?>
+
     <div class="container">
         <h1 class="text-center">Contact Us</h1>
         <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">

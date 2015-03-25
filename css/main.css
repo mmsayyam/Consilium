@@ -17,7 +17,7 @@
 	background-color: #2A2A2A;
 	color: #FFFFFF;
 	-webkit-transition-duration: 0.4s;
-  	-moz-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
@@ -38,7 +38,7 @@
 	color: #000000;
 	border-bottom: 1px solid #000000;
 	-webkit-transition-duration: 0.4s;
-  	-moz-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
@@ -63,7 +63,7 @@ body p {
 a {
 	color: #000000;
 	-webkit-transition-duration: 0.2s;
-  	-moz-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
 	-o-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 }
@@ -72,7 +72,7 @@ a:hover {
 	color: #000000;
 	opacity: .2;
 	-webkit-transition-duration: 0.2s;
-  	-moz-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
 	-o-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 }
@@ -92,4 +92,22 @@ a:hover {
 }
 body {
 	background-color: #ecf0f1;
+}
+#edit-page {
+	margin-top: 12px;
+	margin-right: 4px;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background-color: rgba(0,0,0,5);
+	opacity: .2;
+	position: fixed;
+	right: 10px;
+	z-index: 9000;
+}
+#edit-page:hover {
+	opacity: .6;
+}
+#edit-page a {
+	color: #fff;
+	font-size: 12px;
 }

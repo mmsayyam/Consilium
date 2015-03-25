@@ -1,45 +1,49 @@
 <?php require_once 'connections/connection.php'; ?>
 <?php 
-	if(!isset($_SESSION)) {
-		session_start();
-	}
+if(!isset($_SESSION)) {
+	session_start();
+}
 ?>
 <?php
-	$message = "";
-	if(isset($_POST['form-insert']) && isset($_POST['trigger'])) {
-		$username = $_POST['username'];
-		$password = $_POST['password'];
-		$query = "SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}' ";
-		$result = mysqli_query($con, $query);
-		$record = mysqli_fetch_array($result);
-		$row_count = mysqli_num_rows($result);
+$message = "";
+if(isset($_POST['form-insert']) && isset($_POST['trigger'])) {
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$query = "SELECT * FROM users WHERE username = '{$username}' AND password = '{$password}' ";
+	$result = mysqli_query($con, $query);
+	$record = mysqli_fetch_array($result);
+	$row_count = mysqli_num_rows($result);
 
-		if($row_count > 0) {
-			if(!isset($_SESSION)){
-				session_start();
-			}
-			$_SESSION['username'] = $_POST['username'];
-			$_SESSION['access'] = $record['access'];
-			if ($record['access'] == 'admin') {
+	if($row_count > 0) {
+		if(!isset($_SESSION)){
+			session_start();
+		}
+		$_SESSION['username'] = $_POST['username'];
+		$_SESSION['access'] = $record['access'];
+		if ($record['access'] == 'admin') {
+			if(isset($_SESSION['redirect-to'])) {
+					// header("Location: admin/".$_SESSION['redirect-to']);
+			} else {
 				header("Location: admin/index.php");
 			}
-			elseif ($record['access'] == 'user') {
-				header("Location: user-panel.php");
-			}
-			
 		}
-		else {
-			$message = "Wrong Username or Password";
+		elseif ($record['access'] == 'user') {
+			header("Location: user-panel.php");
 		}
+		
 	}
+	else {
+		$message = "Wrong Username or Password";
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="img/Consilium.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="img/Consilium.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
