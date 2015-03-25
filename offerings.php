@@ -56,6 +56,7 @@ $acc_record = mysqli_fetch_array($acc_result);
       <script type="text/javascript">
          $('.panel-heading').click(function() {
             $(this).toggleClass('panel-heading-opened');
+            $('.panel-heading').not(this).removeClass('panel-heading-opened');
          })
       </script>
    </body>
