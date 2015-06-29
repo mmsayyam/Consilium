@@ -35,7 +35,9 @@
 		<?php
 	}
 	?>
-	<div class="banner"></div>
+	<div class="banner">
+		<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+	</div>
 	<div class="container">
 		
 		<div class="heading-container">

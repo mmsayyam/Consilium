@@ -23,7 +23,9 @@ $acc_record = mysqli_fetch_array($acc_result);
 <body class="what-we-do-body">
   <?php require_once('includes/header.html') ?>
   
-  <div class="banner"></div>
+  <div class="banner">
+    <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+  </div>
   <div class="container">
   
       <div class="heading-container">

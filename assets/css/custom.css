@@ -167,15 +167,24 @@ h2 {
 	text-align: center;
 	font-weight: bold;
 }
-
 .banner {
 	width: 100%;
 	height: 300px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center;
+	position: relative;
 }
-
+.banner-word {
+	position: absolute;
+	width: 60%;
+	text-align: center;
+	top: 106px;
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+	margin-left: 20%;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
 .container {
 	max-width: 1200px;
 }
@@ -233,16 +242,20 @@ ul, ol {
 /*--------------------------- Banners ---------------------------*/
 
 .wwb-body .banner {
-	background-image: url(../img/slider-images/image1.png);
+	background-image: url(../img/slider-images/image10.jpg);
+	background-position: center 0;
 }
 .what-we-do-body .banner {
-	background-image: url(../img/slider-images/image3.png);
+	background-image: url(../img/slider-images/image8.jpg);
+	background-position: center 18%;
 }
 .wwa-body .banner {
-	background-image: url(../img/slider-images/image5.png);
+	background-image: url(../img/slider-images/image9.jpg);
+	background-position: center 12%;
 }
 .offering-body .banner {
-	background-image: url(../img/slider-images/image6.png);
+	background-image: url(../img/slider-images/image7.jpg);
+	background-position: center 37%;
 }
 
 /*--------------------------- Footer ---------------------------*/

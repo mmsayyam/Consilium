@@ -38,7 +38,9 @@ $acc_record = mysqli_fetch_array($acc_result);
       <?php
    }
    ?>
-   <div class="banner"></div>
+   <div class="banner">
+         <div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+   </div>
    <div class="container">
       <div class="heading-container">
             <h2>Our Offerings</h2>
