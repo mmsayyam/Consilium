@@ -1,8 +1,3 @@
-<?php 
-if(!isset($_SESSION)) {
-	session_start();
-}
-?>
 <?php
 function curPageURL() {
 	$pageURL = 'http';

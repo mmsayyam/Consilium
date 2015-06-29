@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="img/Consilium.svg">
+    <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Contact</title>
 	<meta http-equiv="refresh" content="3;URL=index.php">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">

@@ -1,0 +1,113 @@
+.thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	width: auto;
+	height: 200px;
+}
+.thumbnail .aside-img {
+	width: 100%;
+	height: auto;
+}
+.panel .thumbnail {
+	border: none;
+}
+.panel-article-index {
+	border: rgba(0,0,0,0);
+	box-shadow: none;
+}
+.panel-article-index > .panel-heading{
+	background-color: #2A2A2A;
+	color: #FFFFFF;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.panel-article-index > .panel-footer {
+	background-color: #FFFFFF;
+	border: none;
+}
+.panel-article-index button {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+.panel-article-index {
+	border: none;
+	border: 1px solid #dddddd;
+	border-radius: 0px;
+}
+.panel-article-index button:hover {
+	color: #000000;
+	border-bottom: 1px solid #000000;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.aside-articles {
+	border-left: 2px solid #ddd;
+}
+.aside-article {
+	margin-left: 3px;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #ddd;
+}
+body {
+	font-family: 'OpenSansCondensed', sans-serif;
+}
+body p {
+	font-family: 'OpenSans', sans-serif;
+}
+.editor {
+	overflow: scroll;
+	max-height: 300px;
+}
+a {
+	color: #000000;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+a:hover {
+	text-decoration: none;
+	color: #000000;
+	opacity: .2;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+.heading {
+	margin-bottom: 3em;
+}
+@font-face {
+	font-family: 'OpenSansCondensed';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+	font-family: 'OpenSans';
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+.cke_button__source {
+	display: none;
+}
+body {
+	background-color: #ecf0f1;
+}
+#edit-page {
+	margin-top: 12px;
+	margin-right: 4px;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background-color: rgba(0,0,0,5);
+	opacity: .2;
+	position: fixed;
+	right: 10px;
+	z-index: 9000;
+}
+#edit-page:hover {
+	opacity: .6;
+}
+#edit-page a {
+	color: #fff;
+	font-size: 12px;
+}

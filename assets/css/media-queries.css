@@ -1,0 +1,24 @@
+@media screen and (max-width: 640px) {
+	.panel-default > .panel-heading + .panel-collapse > .panel-body {
+		display: block !important;
+	}
+	.panel-content {
+		margin-left: 0px !important;
+	}
+}
+@media screen and (max-width: 470px) {
+	.related-links li {
+		width: 130px !important;
+	}
+	.related-links li:nth-child(2n+1) {
+		text-align: right;
+	}
+	.related-links li:nth-child(2n+2) {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 320px) {
+	.related-links li {
+		text-align: left !important;
+	}
+}

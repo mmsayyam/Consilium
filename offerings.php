@@ -14,10 +14,11 @@ $acc_record = mysqli_fetch_array($acc_result);
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width">
-   <link rel="shortcut icon" href="img/Consilium.svg">
+   <link rel="shortcut icon" href="assets/img/Consilium.svg">
    <title>Consilium - Our Offerings</title>
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="css/header.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/custom.css">
+   
    <link rel="stylesheet" type="text/css" href="css/footer.css">
    <link rel="stylesheet" type="text/css" href="css/main.css">
    <link rel="stylesheet" type="text/css" href="css/second-pages.css">
@@ -25,7 +26,7 @@ $acc_record = mysqli_fetch_array($acc_result);
 
 </head>
 <body class="offering-body">
-   <?php require_once('includes/header.php') ?>
+   <?php require_once('includes/header.html') ?>
    <?php
    require_once 'includes/curPageScript.php';
    if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
@@ -37,10 +38,22 @@ $acc_record = mysqli_fetch_array($acc_result);
       <?php
    }
    ?>
+   <div class="banner"></div>
    <div class="container">
-      <h1>Our Offerings</h1>
+      <div class="heading-container">
+            <h2>Our Offerings</h2>
+            <div style="position: relative"><hr class="fancy-line"></div>
+      </div>
       <?php echo $record['content'] ?>
-
+   </div>
+      <div class="special-p">
+            <p>Are we right for you? If our values, philosophy and practice on the subject of Leadership and Personal/Professional Development appeal to you, then we should talk. If you&rsquo;re after more information or detail about our specific program offerings please drop us a line. We would love to hear from you.</p>
+      </div>
+   <div class="container">
+      <div class="heading-container">
+            <h2>Learning Programs/Modules</h2>
+            <div style="position: relative"><hr class="fancy-line"></div>
+      </div>
       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
          <?php $i = 0; do{$i++ ?>
             <div class="panel panel-default">
@@ -60,10 +73,10 @@ $acc_record = mysqli_fetch_array($acc_result);
             <?php }while($acc_record = mysqli_fetch_array($acc_result)) ?>
          </div>
       </div>
-      <?php require_once 'includes/footer.php'; ?>
+      <?php require_once 'includes/footer.html'; ?>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
       <script type="text/javascript">
          $('.panel-heading').click(function() {
             $(this).toggleClass('panel-heading-opened');

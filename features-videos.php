@@ -1,3 +1,8 @@
+<?php 
+if(!isset($_SESSION)) {
+	session_start();
+}
+?>
 <?php require_once 'connections/connection.php'; ?>
 <?php
 		$query = "SELECT COUNT(*) FROM gallery";
@@ -12,17 +17,15 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" href="img/Consilium.svg">
+    <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Features & Videos</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/second-pages.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="gallery/js/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/features-videos.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/features-videos.css">
 	<script type="text/javascript">
     	$(document).ready(function() {
 		    var track_click = 0; //total loaded record group(s)
@@ -67,7 +70,7 @@
 </head>
 <body class="features-body">
 
-	<?php require_once 'includes/header.php'; ?>
+	<?php require_once 'includes/header.html'; ?>
 	<?php
 	require_once 'includes/curPageScript.php';
 	if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
@@ -81,7 +84,10 @@
 	?>
 
 	<div class="container">
-		<h1 class="text-center">Features & Videos</h1>
+		<div class="heading-container">
+            <h2>Features & Videos</h2>
+            <div style="position: relative"><hr class="fancy-line"></div>
+      	</div>
 		<div class="main">
 			<div class="modal fade" id="myModal" tabindex="99999" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		      	<div class="modal-dialog">
@@ -99,15 +105,18 @@
 			</ul>
 
 			<div class="animation_image" style="display:none" align="center">
-				<img src="img/ajax-loader.gif">
+				<img src="assets/img/ajax-loader.gif">
 			</div>
-			<button class="load_more btn btn-load-more" >Load More</button>
+			<div align="center">
+				<button class="btn btn-consilium-pointy load_more" >Load More</button>
+			</div>
 			<div class="no-more text-center" style="display:none">
 				<h3>No more content to load.</h3>
 			</div>
 
 		</div>
 	</div>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<?php require_once 'includes/footer.html' ?>
 </body>
 </html>

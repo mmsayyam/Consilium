@@ -14,10 +14,10 @@
             <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
                 <h3 class="text-left connect-head">GET IN TOUCH</h3>
                 <ul class="connect-links">
-                    <li><a href=""><img class="fb connect" src="../img/facebook.svg"></a></li>
-                    <li><a href=""><img class="tt connect" src="../img/twitter.svg"></a></li>
-                    <li><a href=""><img class="tm connect" src="../img/google.svg"></a></li>
-                    <li><a href=""><img class="tm connect" src="../img/email.svg"></a></li>
+                    <li><a href=""><img class="fb connect" src="../assets/img/facebook.svg"></a></li>
+                    <li><a href=""><img class="tt connect" src="../assets/img/twitter.svg"></a></li>
+                    <li><a href=""><img class="tm connect" src="../assets/img/google.svg"></a></li>
+                    <li><a href=""><img class="tm connect" src="../assets/img/email.svg"></a></li>
                 </ul>
             </div>
             

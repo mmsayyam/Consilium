@@ -31,12 +31,12 @@
 	  	<!-- Controls -->
 		<a class="left carousel-control" href="#video-carousel" role="button" data-slide="prev">
 		    <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-		    <span class="left-arrow"><img src="img/Arrow_Right_Filled.svg"></span>
+		    <span class="left-arrow"><img src="assets/img/Arrow_Right_Filled.svg"></span>
 		    <span class="sr-only">Previous</span>
 		</a>
 		<a class="right carousel-control" href="#video-carousel" role="button" data-slide="next">
 		    <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-		    <span class="right-arrow"><img src="img/Arrow_Right_Filled.svg"></span>
+		    <span class="right-arrow"><img src="assets/img/Arrow_Right_Filled.svg"></span>
 		    <span class="sr-only">Next</span>
 		</a>
 	</div>

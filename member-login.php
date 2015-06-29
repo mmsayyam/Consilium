@@ -42,15 +42,15 @@ if(isset($_POST['form-insert']) && isset($_POST['trigger'])) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="img/Consilium.svg">
+	<link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/header.css">
 	<title>Member Login</title>
 </head>
 <body>
-	<?php require_once('includes/header.php') ?>
+	<?php require_once('includes/header.html') ?>
 
 	<div class="container-fluid">
 		<h3 class="text-center">

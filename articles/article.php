@@ -30,15 +30,15 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Consilium - <?php echo $title ?></title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/article.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/article.css">
 </head>
 <body>
-	<?php require_once('includes/header.php') ?>
+	<?php require_once('includes/header.html') ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9">
@@ -68,9 +68,9 @@
 			
 		</div>
 	</div>
-	<?php require_once 'includes/footer.php'; ?>
+	<?php require_once 'includes/footer.html'; ?>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>

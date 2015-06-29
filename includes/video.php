@@ -21,8 +21,8 @@
     
     
     <div class="video-slider">
-		<span class="left"><img src="img/Arrow_Right_Filled.svg"></span>
-		<span style="float:right" class="right"><img src="img/Arrow_Right_Filled.svg"></span>
+		<span class="left"><img src="assets/img/Arrow_Right_Filled.svg"></span>
+		<span style="float:right" class="right"><img src="assets/img/Arrow_Right_Filled.svg"></span>
     		
 		<ul class="videos">
 			
@@ -34,7 +34,7 @@
 							<input type="hidden" value="<?php echo $row['g_content'] ?>" id="content">
 							<input type="hidden" value="<?php echo $row['g_title'] ?>" id="title">
 						</video>
-						<div class="overlay"><img src="img/video_play_icon.svg"></div>
+						<div class="overlay"><img src="assets/img/video_play_icon.svg"></div>
 					</div>
 					<?php if ($l == 5) {  ?>
 						<div class="anchor"></div>
