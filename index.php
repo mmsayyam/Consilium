@@ -43,7 +43,7 @@
     </div>
 	<?php require_once('includes/video-carousel.php') ?>
     <div class="video-slider"><?php require_once 'includes/video.php'; ?></div>
-    <div class="heading">
+    <div class="heading" style="margin-top: 36px;">
         <h1 class="text-center" style="font-size: 24px;">
             <a href="features-videos.php" style="color: #000;">
                 More Videos
