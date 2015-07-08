@@ -50,7 +50,26 @@
                 <img style="height: 18px; width:auto;" src="assets/img/arrow_right.svg">
             </a>
         </h1>
-        <div style="position: relative"><hr class="fancy-line"></div>
+    </div>
+    <div class="firm-tiles-container" align="center">
+        <ul>
+            <li class="firm-tiles">
+                <div class="firm-img-container"><div><img src="assets/img/hbs.png"></div></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </li>
+            <li class="firm-tiles">
+                <div class="firm-img-container"><div><img src="assets/img/newcastle.png"></div></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </li>
+            <li class="firm-tiles">
+                <div class="firm-img-container"><div><img src="assets/img/capgemini.png"></div></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </li>
+            <li style="border-right: none;" class="firm-tiles">
+                <div class="firm-img-container"><div><img src="assets/img/ibm.jpg"></div></div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </li>
+        </ul>
     </div>
 
     <?php require_once('includes/footer.html') ?>
