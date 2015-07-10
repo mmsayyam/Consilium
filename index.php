@@ -7,10 +7,7 @@
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
     <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/footer.css">-->
-    <!--
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">-->
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
     <link rel="stylesheet" type="text/css" href="assets/css/video.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main-slider.css">
