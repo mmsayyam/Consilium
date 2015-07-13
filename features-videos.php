@@ -19,13 +19,16 @@ if(!isset($_SESSION)) {
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Features & Videos</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/custom.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300|Quicksand' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/features-videos.css">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/features-videos.css"> -->
+	<link rel="stylesheet" href="assets/css/features.min.css" />
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css" />
 	<script type="text/javascript">
     	$(document).ready(function() {
 		    var track_click = 0; //total loaded record group(s)
@@ -108,7 +111,7 @@ if(!isset($_SESSION)) {
 				<img src="assets/img/ajax-loader.gif">
 			</div>
 			<div align="center">
-				<button class="btn btn-consilium-pointy load_more" >Load More</button>
+				<button class="btn btn-consilium-o-blue load_more" >Load More</button>
 			</div>
 			<div class="no-more text-center" style="display:none">
 				<h3>No more content to load.</h3>
@@ -116,7 +119,8 @@ if(!isset($_SESSION)) {
 
 		</div>
 	</div>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<?php require_once 'includes/footer.html' ?>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

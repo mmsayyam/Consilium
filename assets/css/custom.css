@@ -2,7 +2,6 @@
 	Cyan: #34aca0, Banana Green: #00a652, Orange: #f4a74b, Sea Green: #20665e, Blue: #00a9c8
 */
 @import url('../font-awesome/css/font-awesome.min.css');
-@import url('media-queries.css');
 body {
 	font-family: 'OpenSansCondensed', sans-serif;
 	background-color: #eeeeee;
@@ -75,6 +74,30 @@ body p {
 }
 .contact-body .nav-top {
 	background-color: #34aca0;
+}
+.navbar-brand img {
+	width: auto;
+	height: 72px;
+}
+.nav-inner {
+	height: 100px;
+}
+.navbar-fixed-top .nav-inner {
+	height: 74px;
+}
+.navbar-fixed-top .navbar-brand img {
+	height: 50px;
+}
+.navbar-fixed-top li a {
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+.navbar-fixed-top .navbar-nav {
+	margin-top: 0px;
+}
+.navbar-fixed-top .navbar-collapse {
+	padding-top: 0px;
+	max-height: 530px;
 }
 #home-page .home-nav a, .what-we-do-body .what-we-do-nav a, .wwa-body .wwa-nav a, .wwb-body .wwb-nav a, .offering-body .offering-nav a, .features-body .features-nav a, .contact-body .contact-nav a {
 	color: #FFFFFF;
@@ -198,7 +221,7 @@ h2 {
 	color: rgb(255, 255, 255);
 	
 	margin-left: 20%;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 .container {
 	max-width: 1200px;
@@ -220,7 +243,16 @@ h2 {
 ul, ol {
 	margin-bottom: 20px;
 }
-
+.btn-consilium-o-green {
+	color: #00A652;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #00A652;
+}
+.btn-consilium-o-blue {
+	color: #00A9C8;
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #00A9C8;
+}
 .btn-consilium-round {
 	color: #FFF;
 	background-color: #34ACA0;
@@ -305,11 +337,18 @@ footer ul li {
 }
 .connect-container {
 	display: inline-block;
-	padding: 6px;
+	/* padding: 6px; */
+	position: relative;
+	vertical-align: top;
 	border-radius: 28px;
 	border: 1px solid #FFF;
 	width: 34px;
 	height: 34px;
+}
+.connect-container a{
+	position: absolute;
+	top: 6px;
+	left: 10px;
 }
 .connect {
 	width: 20px;
@@ -338,16 +377,17 @@ footer ul li {
 .panel-group .panel {
 	border-radius: 0px;
 }
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
-	display: flex;
-}
 .panel-content {
 	width: 80%;
     margin-left: 15px;
     text-align: left;
+    display: inline-block;
+    vertical-align: top;
 }
 .panel-image {
-	padding-top: 15px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 17px;
 }
 .panel-image img {
 	width: 200px;
@@ -402,54 +442,4 @@ footer ul li {
 .firm-tiles img {
 	max-height: 90px;
 	max-width: 95%;
-}
-@media screen and (max-width: 900px) {
-	.firm-tiles {
-		width: 49%;
-		border-right: none;
-	}
-	.firm-tiles-container {
-		padding: 4px 0px;
-	}
-	.firm-tiles{
-	    position: relative;
-	}
-	/* Add bottom border for all boxes except the last two */
-	.firm-tiles:not(:nth-last-child(2)):not(:last-child):after{
-	    content: '';
-	    position: absolute;
-	    bottom: 0;
-	    width: 70%;
-	    left: 15%;
-	    height: 1px;
-	    background-color: #ddd;
-	}
-	/* Add right border for all odd indexed boxes (1,3,5...) */
-	.firm-tiles:nth-child(2n+1):before{
-	    content: '';
-	    position: absolute;
-	    right: 0;
-	    height: 70%;
-	    top: 15%;
-	    width: 1px;
-	    background-color: #ddd;
-	}
-}
-@media screen and (max-width: 640px) {
-	.firm-tiles {
-		width: 90%;
-		margin: 0 5%;
-	}
-	.firm-tiles-container {
-		padding: 10px 0px;
-	}
-	.firm-tiles:not(:last-child) {
-		border-bottom: 1px solid #ddd;
-	}
-	.firm-tiles:not(:nth-last-child(2)):not(:last-child):after{
-	    background-color: transparent;
-	}
-	.firm-tiles:nth-child(2n+1):before{
-	    background-color: transparent;
-	}
 }

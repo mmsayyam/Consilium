@@ -13,13 +13,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Who will benefit</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/custom.css">
-    <!--<link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/second-pages.css">
-    <link rel="stylesheet" type="text/css" href="css/offering.css">-->
+	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/custom.min.css">
 
 </head>
 <body class="wwb-body">
@@ -50,5 +45,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

@@ -16,8 +16,8 @@ $acc_record = mysqli_fetch_array($acc_result);
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="assets/img/Consilium.svg">
   <title>Consilium - What We Do</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/custom.min.css">
 
 </head>
 <body class="what-we-do-body">
@@ -52,7 +52,7 @@ $acc_record = mysqli_fetch_array($acc_result);
             <?php }while($acc_record = mysqli_fetch_array($acc_result)) ?>
          </div>
          <a href="features-videos.php">
-           <button class="btn btn-consilium-pointy">Watch Our Videos</button>
+           <button class="btn btn-consilium-o-green">Watch Our Videos</button>
          </a>
       </div>
       
@@ -63,5 +63,6 @@ $acc_record = mysqli_fetch_array($acc_result);
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 </body> 
 </html>

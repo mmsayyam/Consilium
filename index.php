@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width">
 	<title>Consilium</title>
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
-    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/video.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main-slider.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/video-carousel.css">
+    <link rel="stylesheet" href="assets/css/custom.min.css" />
 </head>
 <body id="home-page">
     <?php require_once('includes/header.html') ?>
@@ -63,7 +58,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             </li>
             <li style="border-right: none;" class="firm-tiles">
-                <div class="firm-img-container"><div><img src="assets/img/ibm.jpg"></div></div>
+                <div class="firm-img-container"><div><img src="assets/img/ibm.png"></div></div>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             </li>
         </ul>
@@ -75,5 +70,6 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/slider-data.js"></script>
     <script type="text/javascript" src="assets/js/main-slider-pause.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
