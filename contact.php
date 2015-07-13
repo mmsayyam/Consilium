@@ -44,8 +44,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="assets/img/Consilium.svg">
 	<title>Consilium - Contact Us</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/custom.min.css" />
 </head>
 <body class="contact-body">
     <?php require_once('includes/header.html') ?>
@@ -67,7 +67,6 @@
         </div>
         <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
             <div class="form-group">
-                <!--<div class="text-center contact-label"><label for="name" class="col-sm-2 control-label"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></label></div>-->
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="name" placeholder="Your Name">
                 </div>
@@ -76,13 +75,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <!--<div class="text-center contact-label"><label for="email" class="col-sm-2 control-label"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></label></div>-->
                 <div class="col-sm-12">
                     <input type="text" class="form-control" name="subject" placeholder="Subject">
                 </div>
             </div>
             <div class="form-group">
-                <!--<div class="text-center contact-label"><label for="message" class="col-sm-2 control-label"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></label></div>-->
                 <div class="col-sm-12">
                     <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
                 </div>
@@ -96,8 +93,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!--     // <script type="text/javascript" src="assets/js/main.js"></script> -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
     <?php require_once('includes/footer.html') ?>
 </body>
