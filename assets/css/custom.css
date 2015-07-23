@@ -42,7 +42,7 @@ body p {
 	background-color: #FFFFFF;
 	margin-bottom: 0px;
 	border: none;
-	z-index: 10000;
+	z-index: 50;
 }
 
 .navbar-collapse a {
