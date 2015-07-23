@@ -75,11 +75,11 @@
 .video-slider .right {
 	right: 0px;
 }
-.video-slider .left img {
+/*.video-slider .left img {
 	-ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-}
+}*/
 .video-slider .overlay {
 	width: 100%;
 	height: 100%;

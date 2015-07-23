@@ -16,22 +16,25 @@ video {
 .carousel-control {
 	position: initial;
 }
+.left-arrow {
+	left; 4px;
+}
 .left-arrow, .right-arrow {
     position: absolute;/*
     margin-left: -2.5em;*/
     height: 23%;
     top: 34%;
 }
-.left-arrow img {
+/*.left-arrow img {
 	-ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-}
+}*/
 .left-arrow img, .right-arrow img {
 	height: 100%;
 }
 .right-arrow {
-	right: 0px;
+	right: 12px;
 }
 .video-carousel .carousel-indicators li {
 	border: 1px solid #414141;
