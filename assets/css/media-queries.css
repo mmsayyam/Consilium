@@ -2,6 +2,9 @@
 	.panel-content {
 		width: 68%;
 	}
+	#extra-links > ul > li {
+		width: 163px;
+	}
 }
 @media screen and (max-width: 900px) {
 	.firm-tiles {
@@ -36,6 +39,10 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	footer h3 {
+		text-align: center;
+		padding-left: 0px;
+	}
 	.panel-content {
 		width: 62%;
 	}
@@ -48,6 +55,9 @@
 	}
 	.banner-word {
 		top: 80px;
+	}
+	.navbar-toggle {
+		margin-top: 23px;
 	}
 }
 @media screen and (max-width: 640px) {
@@ -75,6 +85,7 @@
 	}
 }
 @media screen and (max-width: 470px) {
+	
 	.related-links li {
 		width: 130px !important;
 	}

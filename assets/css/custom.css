@@ -4,11 +4,11 @@
 @import url('../font-awesome/css/font-awesome.min.css');
 
 
-h4 {
+h1, h4 {
 	font-family: 'raleway-medium';
 }
 body {
-	font-family: 'OpenSansCondensed', sans-serif;
+	font-family: 'lato-light', sans-serif;
 	background-color: #eeeeee;
 }
 body p {
@@ -99,20 +99,20 @@ body p {
 .nav-inner {
 	height: 100px;
 }
-.navbar-fixed-top .nav-inner {
+.navbar-small .nav-inner {
 	height: 74px;
 }
-.navbar-fixed-top .navbar-brand img {
+.navbar-small .navbar-brand img {
 	height: 50px;
 }
-.navbar-fixed-top li a {
+.navbar-small li a {
 	padding-top: 27px;
 	padding-bottom: 27px;
 }
-.navbar-fixed-top .navbar-nav {
+.navbar-small .navbar-nav {
 	margin-top: 0px;
 }
-.navbar-fixed-top .navbar-collapse {
+.navbar-small .navbar-collapse {
 	padding-top: 0px;
 	max-height: 530px;
 }
@@ -213,6 +213,18 @@ hr.fancy-line:after {
 
 /*--------------------------- Common Among all pages ---------------------------*/
 
+.modal-dialog {
+	margin-top: 72px;
+}
+
+.heading > h1 {
+	font-family: 'lato-light';
+}
+
+.carousel .h3 {
+	font-family: 'lato-light';
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -300,6 +312,7 @@ ul, ol {
 	background-color: rgb(1, 166, 136);
 	color: rgb(255, 255, 255);
 	padding: 40px 16px 66px;
+	text-align: center;
 }
 .special-p p {
 	max-width: 1200px;
@@ -334,6 +347,8 @@ footer {
 }
 footer h3 {
 	color: #FFF;
+	text-align: left;
+	padding-left: 58px;
 }
 footer a {
 	color: #FFFFFF;
