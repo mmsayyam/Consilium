@@ -30,25 +30,25 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Consilium - <?php echo $title ?></title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/header.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/footer.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/article.css">
+    <link rel="shortcut icon" href="../assets/img/Consilium.svg">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../assets/css/articles.min.css" />
 </head>
-<body>
+<body id="article-body">
 	<?php require_once('includes/header.html') ?>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9">
-				<h1 class="a-title"><?php echo $title ?></h1>
-				<p class="col-sm-2">Created on: <?php echo $date ?></p>
-				<p class="col-sm-2 col-sm-offset-8 text-right">By: <?php echo $author ?></p>
+				<div class="heading-container">
+					<h2><?php echo $title ?></h2>
+					<div style="position: relative"><hr class="fancy-line"></div>
+				</div>
+				<p class="col-sm-3">Created on: <?php echo $date ?></p>
+				<p class="col-sm-3 col-sm-offset-6 text-right">By: <?php echo $author ?></p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-9">
+			<div class="col-lg-9 content-container">
 				<img src="../gallery/images/<?php echo $image ?>" class="img-responsive a-img">
 
 				<div class="content">
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 			<div class="col-lg-3 more-articles">
-				<h2>You might also like...</h2>
+				<h4>You might also like...</h4>
 				<ul>
 					<?php do { ?>
 						<li class="">

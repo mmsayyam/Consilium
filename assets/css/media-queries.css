@@ -5,6 +5,12 @@
 	#extra-links > ul > li {
 		width: 163px;
 	}
+	.content-container {
+		border: none;
+	}
+	.more-articles ul li{
+		display: inline-block;
+	}
 }
 @media screen and (max-width: 900px) {
 	.firm-tiles {

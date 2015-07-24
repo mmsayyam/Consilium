@@ -29,8 +29,8 @@ $items_per_group = 8;
 							<input type="hidden" value="'.$row['g_content'].'" id="content">
 							<input type="hidden" value="'.$row['g_title'].'" id="title">
 						</video>
-						<div class="overlay"><img src="assets/img/video_play_icon.svg">
-						<div class="img-overlay">
+						<div class="overlay"><img src="assets/img/video_play.png">
+						<div class="img-overlay video-overlay">
 	                    	<h2>'.$row["g_title"].'</h2>
 	                    </div>
 						</div>

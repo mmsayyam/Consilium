@@ -1,7 +1,7 @@
 /*
 
 */
-@import url('../font-awesome/css/font-awesome.min.css');
+/*@import url('../font-awesome/css/font-awesome.min.css');*/
 
 
 h1, h4 {
@@ -70,6 +70,9 @@ body p {
 }
 .navbar-toggle .icon-bar {
 	background-color: #000;
+}
+.nav-top {
+	background-color: #34aca0;
 }
 #home-page .nav-top {
 	background-color: #34aca0;
@@ -165,6 +168,9 @@ hr.fancy-line:before, hr.fancy-line:after {
 hr.fancy-line:after {
     background: rgba(0,0,0,0);
 }
+#article-body hr.fancy-line, #article-body hr.fancy-line:before {
+	background: rgba(52, 172, 160, 0) radial-gradient(ellipse at center center , rgba(52, 172, 160, 0.8) 0%, rgba(52, 172, 160, 0) 16%) repeat scroll 0% 0%;
+}
 .special-p hr.fancy-line:before,.special-p  hr.fancy-line:after {
 	width: 0%;
 }
@@ -188,6 +194,9 @@ hr.fancy-line:after {
 }
 .contact-body hr.fancy-line, .contact-body hr.fancy-line:before {
 	background: rgba(52, 172, 160, 0) radial-gradient(ellipse at center center , rgba(52, 172, 160, 0.8) 0%, rgba(52, 172, 160, 0) 16%) repeat scroll 0% 0%;
+}
+#article-body h2 {
+	color: #34aca0;
 }
 .special-p h2 {
 	color: #FFF;
@@ -261,7 +270,7 @@ h2 {
 	padding: 4px 18px;
 }
 
-.container p {
+.container p:not(#article-body .container p) {
 	margin: 12px 0px 12px 0px;
 }
 
