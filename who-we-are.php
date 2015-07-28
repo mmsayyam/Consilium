@@ -30,9 +30,6 @@ $record = mysqli_fetch_array($result);
 			
 			<?php
 		}
-		else {
-			echo "nope";
-		}
 		?>
 		<div class="banner">
 			<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
