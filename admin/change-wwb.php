@@ -55,10 +55,10 @@
 	<title>Consultancy: Change Who Will Benefit</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-text.css"> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
 
-	<script src="../js/ckeditor/ckeditor.js"></script>
+	<script src="../assets/js/ckeditor/ckeditor.js"></script>
 	<script>
 
 		// This code is generally not necessary, but it is here to demonstrate
@@ -99,7 +99,7 @@
 	</script>
 </head>
 <body>
-
+	<?php require_once('admin-header.html') ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
@@ -125,7 +125,7 @@
 
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 	<!--<script type="text/javascript" src="js/jquery-te-1.4.0.min.js" charset="utf-8"></script>
 
 	<script>

@@ -1,11 +1,12 @@
-<!--<?php 
+<?php session_start() ?>
+<?php 
  	require_once 'connections/connection.php';
 
  	$query = "SELECT * FROM wwb";
  	$result = mysqli_query($con, $query);
  	$record = mysqli_fetch_array($result);
 
- ?>-->
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,27 +20,29 @@
 </head>
 <body class="wwb-body">
 	<?php require_once('includes/header.html') ?>
-	<?php
-	require_once 'includes/curPageScript.php';
-	if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
-		?>
-		<div id="edit-page" class="pull-right">
-			<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
-		</div>
-		
+	<div class="c-container">
 		<?php
-	}
-	?>
-	<div class="banner">
-		<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
-	</div>
-	<div class="container">
-		
-		<div class="heading-container">
-	      <h2>Who Will Benefit</h2>
-	      <div style="position: relative"><hr class="fancy-line"></div>
-	    </div>
-		<?php echo $record['content'] ?>
+		require_once 'includes/curPageScript.php';
+		if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+			?>
+			<div id="edit-page" class="pull-right">
+				<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
+			</div>
+			
+			<?php
+		}
+		?>
+		<div class="banner">
+			<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+		</div>
+		<div class="container">
+			
+			<div class="heading-container">
+		      <h2>Who Will Benefit</h2>
+		      <div style="position: relative"><hr class="fancy-line"></div>
+		    </div>
+			<?php echo $record['content'] ?>
+		</div>
 	</div>
 	<?php require_once 'includes/footer.html'; ?>
 

@@ -74,7 +74,7 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-text.css"> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
 
 	<script src="../assets/js/ckeditor/ckeditor.js"></script>
 	<script>
@@ -117,7 +117,7 @@
 	</script>
 </head>
 <body>
-
+	<?php require_once('admin-header.html') ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">

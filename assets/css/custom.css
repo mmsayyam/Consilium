@@ -48,7 +48,7 @@ body p {
 .navbar-collapse a {
 	background-color: #FFF;
 }
-#collapsable-nav a:hover {
+#collapsable-nav a:hover, #collapsable-admin-nav a:hover {
 	background-color: #eeeeee;
 }
 .navbar-nav > li > a {
@@ -142,6 +142,31 @@ body p {
 }
 .contact-body .contact-nav a {
 	background-color: #34aca0;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: inherit;
+}
+.navbar-inverse .navbar-brand:hover {
+	color: inherit;
+}
+#edit-page {
+	margin-top: 12px;
+	margin-right: 4px;
+	padding: 4px 8px;
+	border-radius: 6px;
+	background-color: rgba(0,0,0,5);
+	opacity: .2;
+	position: fixed;
+	right: 10px;
+	z-index: 9000;
+}
+#edit-page:hover {
+	opacity: .6;
+}
+#edit-page a {
+	color: #fff;
+	font-size: 12px;
 }
 
 /*--------------------------- Heading and Fancy line ---------------------------*/
@@ -485,4 +510,7 @@ footer ul li {
 .firm-tiles img {
 	max-height: 90px;
 	max-width: 95%;
+}
+.c-container {
+	margin-top: 99px;
 }

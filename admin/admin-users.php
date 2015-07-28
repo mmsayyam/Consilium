@@ -21,11 +21,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Admin Users</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom.min.css">
 </head>
 <body>
-	<?php require_once('../includes/header.php') ?>
+	<?php require_once('admin-header.html') ?>
 
 	<div class="container-fluid">
 		<div class="row">
@@ -79,6 +79,6 @@
 	</div>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>

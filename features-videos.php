@@ -70,49 +70,51 @@ if(!isset($_SESSION)) {
 <body class="features-body">
 
 	<?php require_once 'includes/header.html'; ?>
-	<?php
-	require_once 'includes/curPageScript.php';
-	if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
-		?>
-		<div id="edit-page" class="pull-right">
-			<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
-		</div>
-		
+	<div class="c-container">
 		<?php
-	}
-	?>
-
-	<div class="container">
-		<div class="heading-container">
-            <h2>Features & Videos</h2>
-            <div style="position: relative"><hr class="fancy-line"></div>
-      	</div>
-		<div class="main">
-			<div class="modal fade" id="myModal" tabindex="99999" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		      	<div class="modal-dialog">
-			        <div class="modal-content">
-					    <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				    	</div>
-			          	<div class="modal-body">
-			          	</div>
-			        </div><!-- /.modal-content -->
-		    	</div><!-- /.modal-dialog -->
-		    </div><!-- /.modal -->
-
-			<ul id="gallery" class="gallery row">
-			</ul>
-
-			<div class="animation_image" style="display:none" align="center">
-				<img src="assets/img/ajax-loader.gif">
+		require_once 'includes/curPageScript.php';
+		if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+			?>
+			<div id="edit-page" class="pull-right">
+				<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
 			</div>
-			<div align="center">
-				<button class="btn btn-consilium-o-blue load_more" >Load More</button>
+			
+			<?php
+		}
+		?>
+		
+		<div class="container">
+			<div class="heading-container">
+		            <h2>Features & Videos</h2>
+		            <div style="position: relative"><hr class="fancy-line"></div>
+		      	</div>
+			<div class="main">
+				<div class="modal fade" id="myModal" tabindex="99999" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			      	<div class="modal-dialog">
+				        <div class="modal-content">
+						    <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					    	</div>
+				          	<div class="modal-body">
+				          	</div>
+				        </div><!-- /.modal-content -->
+			    	</div><!-- /.modal-dialog -->
+			    </div><!-- /.modal -->
+		
+				<ul id="gallery" class="gallery row">
+				</ul>
+		
+				<div class="animation_image" style="display:none" align="center">
+					<img src="assets/img/ajax-loader.gif">
+				</div>
+				<div align="center">
+					<button class="btn btn-consilium-o-blue load_more" >Load More</button>
+				</div>
+				<div class="no-more text-center" style="display:none">
+					<h3>No more content to load.</h3>
+				</div>
+		
 			</div>
-			<div class="no-more text-center" style="display:none">
-				<h3>No more content to load.</h3>
-			</div>
-
 		</div>
 	</div>
 	<?php require_once 'includes/footer.html' ?>

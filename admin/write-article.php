@@ -8,9 +8,9 @@
 	<title>Consultancy: Write Article</title>
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-text.css"> -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js" charset="utf-8"></script>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<script src="../js/ckeditor/ckeditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+	<script src="../assets/js/ckeditor/ckeditor.js"></script>
 	<script>
 
 		// This code is generally not necessary, but it is here to demonstrate
@@ -51,7 +51,7 @@
 	</script>
 </head>
 <body>
-	<?php require_once('../includes/header.php') ?>
+	<?php require_once('admin-header.html') ?>
 
 	<div class="container-fluid">
 		<div class="row">

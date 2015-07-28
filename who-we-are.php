@@ -1,10 +1,11 @@
-<!--<?php
+<?php session_start(); ?>
+<?php
 require_once 'connections/connection.php';
 
 $query = "SELECT * FROM wwa";
 $result = mysqli_query($con, $query);
 $record = mysqli_fetch_array($result);
-?>-->
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,33 +19,38 @@ $record = mysqli_fetch_array($result);
 </head>
 <body class="wwa-body">
 	<?php require_once('includes/header.html') ?>
-	<?php
-	require_once 'includes/curPageScript.php';
-	if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
-		?>
-		<div id="edit-page" class="pull-right">
-			<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
-		</div>
-		
+	<div class="c-container">
 		<?php
-	}
-	?>
-	<div class="banner">
-		<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
-	</div>
-	<div class="container">
-		<div class="heading-container">
-	      <h2>Who We Are</h2>
-	      <div style="position: relative"><hr class="fancy-line"></div>
-	    </div>
-		<?php echo $record['content'] ?>
-		<?php echo $record['ceo'] ?>
-		<!--<div>
-			<img class="img-responsive img-circle" src="gallery/images/<?php echo $record['img'] ?>" style="float:right; width: 340px; height: auto; margin-top: 4px; margin-bottom: 14px; margin-left: 16px">
+		require_once 'includes/curPageScript.php';
+		if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+			?>
+			<div id="edit-page" class="pull-right">
+				<a href="redirect-to.php?redirect-to=<?php echo curPageName(); ?>">Edit Page</a> | <a href="admin/index.php">Admin Panel</a>
+			</div>
 			
-		</div>-->
-
-
+			<?php
+		}
+		else {
+			echo "nope";
+		}
+		?>
+		<div class="banner">
+			<div class="banner-word">"We aim to develop the leaders of today to change the world tomorrow."</div>
+		</div>
+		<div class="container">
+			<div class="heading-container">
+		      <h2>Who We Are</h2>
+		      <div style="position: relative"><hr class="fancy-line"></div>
+		    </div>
+			<?php echo $record['content'] ?>
+			<?php echo $record['ceo'] ?>
+			<!--<div>
+				<img class="img-responsive img-circle" src="gallery/images/<?php echo $record['img'] ?>" style="float:right; width: 340px; height: auto; margin-top: 4px; margin-bottom: 14px; margin-left: 16px">
+				
+			</div>-->
+		
+		
+		</div>
 	</div>
 	<?php require_once 'includes/footer.html'; ?>
 

@@ -49,47 +49,49 @@
 </head>
 <body class="contact-body">
     <?php require_once('includes/header.html') ?>
-    <?php
-    require_once 'includes/curPageScript.php';
-    if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
-        ?>
-        <div id="edit-page" class="pull-right">
-            <a href="admin/index.php">Admin Panel</a>
-        </div>
-        
+    <div class="c-container">
         <?php
-    }
-    ?>
-    <div class="container">
-        <div class="heading-container">
-          <h2>Contact Us</h2>
-          <div style="position: relative"><hr class="fancy-line"></div>
-        </div>
-        <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
-            <div class="form-group">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name">
-                </div>
-                <div class="col-sm-6">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
-                </div>
-            </div>
-            <div>
-                <button type="submit" class="btn btn-consilium-round">Submit</button>
-                <input type="hidden" name="mm_hidden" value="mm_hidden">
+        require_once 'includes/curPageScript.php';
+        if (isset($_SESSION['username']) && $_SESSION['access'] === "admin") {
+            ?>
+            <div id="edit-page" class="pull-right">
+                <a href="admin/index.php">Admin Panel</a>
             </div>
             
-        </form>
+            <?php
+        }
+        ?>
+        <div class="container">
+            <div class="heading-container">
+              <h2>Contact Us</h2>
+              <div style="position: relative"><hr class="fancy-line"></div>
+            </div>
+            <form class="form-horizontal" role="form" name="contact-form" method="post" action="contact.php">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <textarea rows="10" cols="40" class="form-control" placeholder="Your Message" name="message"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-consilium-round">Submit</button>
+                    <input type="hidden" name="mm_hidden" value="mm_hidden">
+                </div>
+                
+            </form>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

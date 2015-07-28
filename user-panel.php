@@ -20,8 +20,10 @@
 <body>
 	<?php require_once('includes/header.php') ?>
 
-	<div class="container-fluid">
-		User Panel
+	<div class="c-container">
+		<div class="container-fluid">
+			User Panel
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

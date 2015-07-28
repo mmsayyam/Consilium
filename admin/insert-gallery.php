@@ -90,12 +90,13 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
 	<title>Admin - Insert Stuff</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
-	<script src="../js/ckeditor/ckeditor.js"></script>
+	<?php require_once('admin-header.html') ?>
+	<script src="../assets/js/ckeditor/ckeditor.js"></script>
 
 	<div class="container">
 
