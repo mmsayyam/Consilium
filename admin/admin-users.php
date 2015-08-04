@@ -6,8 +6,39 @@
  		header("Location: ../member-login.php");
  	}
 ?>
-<?php 
+<?php
 	require_once '../connections/connection.php';
+	$message = "";
+	if(isset($_POST['username'])) {
+		
+		$username = $_POST['username'];
+		$password = $_POST['pass'];
+		$confirm = $_POST['confirm-pass'];
+		if ($_POST['access-level'] == "Administrator") {
+			$access_level = "admin";
+		}
+		else {
+			$access_level = "user";
+		}
+		
+
+		if($password == $confirm) {
+			$query = "INSERT INTO users VALUES ('', '$username', '$password', '$access_level')";
+
+			if(mysqli_query($con, $query)) {
+				
+				$message="New user added.";
+			}
+			else {
+				$message = "Error Occured";
+			}
+		}
+		else {
+			$message = "Passwords don't match.";
+		}
+	}
+?>
+<?php 
 
 	$query = "SELECT * FROM users";
 	$result = mysqli_query($con, $query);
@@ -30,7 +61,52 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<?php require_once('../includes/add-user.php') ?>
+				<div class="panel panel-default text-center">
+
+					<div class="panel-heading">
+						<h4>
+							Add New User
+						</h4>
+					</div>
+					<div class="panel-body">
+					<h4><?php echo $message; ?></h4>
+						<form class="form-horizontal" action="admin-users.php" method="post" name="new_user" id="new_user">
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="username">Username</label>
+								<div class="col-sm-8">
+									<input type="text" id="username" name="username" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="pass">Password</label>
+								<div class="col-sm-8">
+									<input type="password" id="pass" name="pass" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="confirm-pass">Confirm Password</label>
+								<div class="col-sm-8">
+									<input type="password" id="confirm-pass" name="confirm-pass" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label" for="access-level">User Type</label>
+								<div class="col-sm-8">
+									<select class="form-control" id="access-level" name="access-level">
+										<option>Administrator</option>
+										<option>User</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-4">
+									<input type="submit" id="submit" name="submit" value="Submit Entry" class="form-control">
+									<input type="hidden" name="form-insert" id="form-insert" value="form-insert">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 			
 		</div>
@@ -62,10 +138,10 @@
 							<?php echo $record['access'] ?>
 						</td>
 						<td class="text-center">
-							Update
+							<a href="user-actions/admin-update.php?uid=<?php echo $record['user_id']; ?>">Update</a>
 						</td>
 						<td class="text-center">
-							Delete
+							<a href="user-actions/admin-delete.php?did=<?php echo $record['user_id']; ?>">Delete</a>
 						</td>
 					</tr>
 					<?php
