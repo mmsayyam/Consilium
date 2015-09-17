@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="index.php">
-				<img style="width: auto; height: 84px;" src="img/Consilium.svg">
+				<img style="width: auto; height: 84px;" src="img/Consilium.svg" id="main-image">
 			</a>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsable-nav">
